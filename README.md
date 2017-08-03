@@ -4,7 +4,7 @@
 
 The Nucleus UI Kit is designed to be the centerpiece of our front-end work over at Temper. It is a UI library based on [Vue.js](http://vuejs.org) with a simple API. Its designed is inspired by Material Design with a big influence of our amazing designers. The Nucleus UI Kit is no exact implementation of the Material design spec.
 
-##Sidenote
+## Sidenote
 
 Nucleus is **not** a CSS framework, and as such you won't find a grid system or styles for typography in it. Instead, the focus is on creating reusable components that have interactivity.
 
