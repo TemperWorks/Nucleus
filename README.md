@@ -9,7 +9,7 @@ The Nucleus UI Kit is designed to be the centerpiece of our front-end work over 
 Nucleus is **not** a CSS framework, and as such you won't find a grid system or styles for typography in it. Instead, the focus is on creating reusable components that have interactivity.
 
 ## Documentation and demo
-[http://temperworks.github.io/Nucleus-UI-Kit/](http://temerworks.github.io/Nucleus-UI-Kit/)
+[http://temperworks.github.io/Nucleus](http://temperworks.github.io/Nucleus/index.html)
 
 ## Requirements
 * [Vue.js](http://vuejs.org/) (^v2.1.4)
