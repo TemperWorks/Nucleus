@@ -64,13 +64,13 @@ Use as a plugin (registers all components with Vue globally):
 
 ```js
 import Vue from 'vue';
-import KeenUI from 'nucleus-ui-kit';
+import NucleusUI from 'nucleus-ui-kit';
 
 Vue.use(NucleusUI);
 
 new Vue({
     components: {
-        // all Keen UI components already registered
+        // all Nucleus UI Kit components already registered
     }
 });
 ```
@@ -91,9 +91,9 @@ new Vue({
 
 ### Globals (script tag)
 
-First, add a stylesheet link to the Keen UI CSS file in `dist/keen-ui.min.css`. Then, add a script tag pointing to `dist/keen-ui.min.js` *after* adding Vue.
+First, add a stylesheet link to the Nucleus CSS file in `dist/nucleus-ui-kit.min.css`. Then, add a script tag pointing to `dist/nucleus-ui-kit.min.js` *after* adding Vue.
 
-If Keen UI detects `Vue` globally, all the components will be registered automatically. The components will also be made available on the global `window.KeenUI` object.
+If Nucleus detects `Vue` globally, all the components will be registered automatically. The components will also be made available on the global `window.Nucleus` object.
 
 Example:
 
@@ -115,7 +115,7 @@ Example:
         new Vue({
             el: '#app',
             components: {
-                // all Keen UI components already registered
+                // all Nucleus components already registered
             }
         });
     </script>
@@ -159,7 +159,7 @@ new Vue({
 * [ ] Add unit tests
 
 ## Licence
-Keen UI is open source and released under the [MIT Licence](LICENCE).
+Nucleus is open source and released under the [MIT Licence](LICENCE).
 
 Copyright (c) 2016-2017 [Temper Works](https://github.com/temperworks).
 
