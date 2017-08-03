@@ -1,0 +1,8 @@
+_del
+_deprecated
+_older
+._reminder
+/node_modules
+Thumbs.db
+npm-debug.log
+.idea
