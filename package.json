@@ -45,9 +45,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TemperWorks/Keen-UI-Kit/issues"
+    "url": "https://github.com/TemperWorks/Nucleus/issues"
   },
-  "homepage": "https://github.com/TemperWorks/Keen-UI-Kit",
+  "homepage": "https://github.com/TemperWorks/Nucleus",
   "dependencies": {
     "autosize": "^3.0.20",
     "deep-assign": "^2.0.0",
