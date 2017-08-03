@@ -29,11 +29,13 @@ IE 10+ (due to [Flexbox support](http://caniuse.com/#search=flexbox)).
 npm install nucleus-ui-kit --save
 ```
 
-### Bower
-
-```bash
-bower install nucleus-ui-kit --save
+### Building from source
+* Download [source](https://github.com/TemperWorks/Nucleus/archive/master.zip)
+* Run
 ```
+npm build:all
+```
+* Build files can be found in dist/
 
 ## Usage
 > Make sure to include either the `dist/nucleus-ui-kit.css` or `dist/nucleus-ui-kit.min.css` file if you are not using individual components from `lib/` as the styles have been extracted into a single CSS file.
