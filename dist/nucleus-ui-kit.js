@@ -6614,7 +6614,10 @@ exports.default = {
         disabled: {
             type: Boolean,
             default: false
-        }
+        },
+        type: {
+            type: String,
+            default: '' }
     },
 
     data: function data() {
@@ -6630,7 +6633,7 @@ exports.default = {
 
     computed: {
         classes: function classes() {
-            return [{ 'is-open': this.isOpen }, { 'is-disabled': this.disabled }];
+            return [{ 'is-open': this.isOpen }, { 'is-disabled': this.disabled }, { 'ui-collapsible--flat': this.type === 'flat' }];
         },
         calculatedHeight: function calculatedHeight() {
             return this.height === 0 || this.useInitialHeight ? 'initial' : this.height + 'px';
