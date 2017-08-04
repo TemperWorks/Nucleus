@@ -3,7 +3,7 @@
         <h2 class="page__title">UiCard</h2>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/src/UiCard.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiCard.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">
