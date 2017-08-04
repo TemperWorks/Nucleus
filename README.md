@@ -153,6 +153,6 @@ new Vue({
 ## Licence
 Nucleus is open source and released under the [MIT Licence](LICENCE).
 
-Copyright (c) 2016-2017 [Temper Works](https://github.com/temperworks).
+Copyright (c) 2017-2018 [Temper Works](https://github.com/temperworks).
 
 > *PS: We would love to know how you are using Nucleus*.
