@@ -50,6 +50,7 @@
 <script>
 import Sidebar from './Sidebar.vue';
 import UiIconButton from 'src/UiIconButton.vue';
+import Vue from 'vue'
 
 export default {
     data() {

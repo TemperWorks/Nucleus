@@ -33,6 +33,8 @@ import UiTextbox from './UiTextbox.vue'
 import UiToolbar from './UiToolbar.vue'
 import UiTooltip from './UiTooltip.vue'
 
+import UiTheme from './core/components/UiTheme'
+
 const Nucleus = {
     UiAlert,
     UiAutocomplete,
@@ -100,6 +102,8 @@ const Nucleus = {
         Vue.component('ui-textbox', UiTextbox)
         Vue.component('ui-toolbar', UiToolbar)
         Vue.component('ui-tooltip', UiTooltip)
+
+        Vue.use(UiTheme)
     }
 }
 
