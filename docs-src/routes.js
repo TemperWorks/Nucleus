@@ -33,14 +33,49 @@ import UiTooltip from './pages/UiTooltip.vue'
 
 const menu = [
     {
-        title: 'Components',
+        title: 'Layout',
         menu: [
             {
-                path: '/ui-alert',
-                component: UiAlert,
-                title: 'UiAlert',
-                sourceUrl: 'src/UiAlert.vue'
+                path: '/ui-card',
+                component: UiCard,
+                title: 'UiCard',
+                sourceUrl: 'src/UiCard.vue'
             },
+            {
+                path: '/ui-menu',
+                component: UiMenu,
+                title: 'UiMenu',
+                sourceUrl: 'src/UiMenu.vue'
+            },
+            {
+                path: '/ui-modal',
+                component: UiModal,
+                title: 'UiModal',
+                sourceUrl: 'src/UiModal.vue'
+            },
+            {
+                path: '/ui-tabs',
+                component: UiTabs,
+                title: 'UiTabs',
+                sourceUrl: 'src/UiTabs.vue'
+            },
+            {
+                path: '/ui-toolbar',
+                component: UiToolbar,
+                title: 'UiToolbar',
+                sourceUrl: 'src/UiToolbar.vue'
+            },
+            {
+                path: '/ui-collapsible',
+                component: UiCollapsible,
+                title: 'UiCollapsible',
+                sourceUrl: 'src/UiCollapsible.vue'
+            }
+        ]
+    },
+    {
+        title: 'User Input',
+        menu: [
             {
                 path: '/ui-autocomplete',
                 component: UiAutocomplete,
@@ -54,12 +89,6 @@ const menu = [
                 sourceUrl: 'src/UiButton.vue'
             },
             {
-                path: '/ui-card',
-                component: UiCard,
-                title: 'UiCard',
-                sourceUrl: 'src/UiCard.vue'
-            },
-            {
                 path: '/ui-checkbox',
                 component: UiCheckbox,
                 title: 'UiCheckbox',
@@ -70,12 +99,6 @@ const menu = [
                 component: UiCheckboxGroup,
                 title: 'UiCheckboxGroup',
                 sourceUrl: 'src/UiCheckboxGroup.vue'
-            },
-            {
-                path: '/ui-collapsible',
-                component: UiCollapsible,
-                title: 'UiCollapsible',
-                sourceUrl: 'src/UiCollapsible.vue'
             },
             {
                 path: '/ui-confirm',
@@ -102,10 +125,22 @@ const menu = [
                 sourceUrl: 'src/UiFileupload.vue'
             },
             {
-                path: '/ui-icon',
-                component: UiIcon,
-                title: 'UiIcon',
-                sourceUrl: 'src/UiIcon.vue'
+                path: '/ui-ripple-ink',
+                component: UiRippleInk,
+                title: 'UiRippleInk',
+                sourceUrl: 'src/UiRippleInk.vue'
+            },
+            {
+                path: '/ui-select',
+                component: UiSelect,
+                title: 'UiSelect',
+                sourceUrl: 'src/UiSelect.vue'
+            },
+            {
+                path: '/ui-slider',
+                component: UiSlider,
+                title: 'UiSlider',
+                sourceUrl: 'src/UiSlider.vue'
             },
             {
                 path: '/ui-icon-button',
@@ -114,16 +149,39 @@ const menu = [
                 sourceUrl: 'src/UiIconButton.vue'
             },
             {
-                path: '/ui-menu',
-                component: UiMenu,
-                title: 'UiMenu',
-                sourceUrl: 'src/UiMenu.vue'
+                path: '/ui-radio',
+                component: UiRadio,
+                title: 'UiRadio',
+                sourceUrl: 'src/UiRadio.vue'
             },
             {
-                path: '/ui-modal',
-                component: UiModal,
-                title: 'UiModal',
-                sourceUrl: 'src/UiModal.vue'
+                path: '/ui-radio-group',
+                component: UiRadioGroup,
+                title: 'UiRadioGroup',
+                sourceUrl: 'src/UiRadioGroup.vue'
+            },
+            {
+                path: '/ui-switch',
+                component: UiSwitch,
+                title: 'UiSwitch',
+                sourceUrl: 'src/UiSwitch.vue'
+            },
+            {
+                path: '/ui-textbox',
+                component: UiTextbox,
+                title: 'UiTextbox',
+                sourceUrl: 'src/UiTextbox.vue'
+            }
+        ]
+    },
+    {
+        title: 'Visual feedback',
+        menu: [
+            {
+                path: '/ui-alert',
+                component: UiAlert,
+                title: 'UiAlert',
+                sourceUrl: 'src/UiAlert.vue'
             },
             {
                 path: '/ui-popover',
@@ -150,70 +208,27 @@ const menu = [
                 sourceUrl: 'src/UiProgressLinear.vue'
             },
             {
-                path: '/ui-radio',
-                component: UiRadio,
-                title: 'UiRadio',
-                sourceUrl: 'src/UiRadio.vue'
-            },
-            {
-                path: '/ui-radio-group',
-                component: UiRadioGroup,
-                title: 'UiRadioGroup',
-                sourceUrl: 'src/UiRadioGroup.vue'
-            },
-            {
-                path: '/ui-ripple-ink',
-                component: UiRippleInk,
-                title: 'UiRippleInk',
-                sourceUrl: 'src/UiRippleInk.vue'
-            },
-            {
-                path: '/ui-select',
-                component: UiSelect,
-                title: 'UiSelect',
-                sourceUrl: 'src/UiSelect.vue'
-            },
-            {
-                path: '/ui-slider',
-                component: UiSlider,
-                title: 'UiSlider',
-                sourceUrl: 'src/UiSlider.vue'
-            },
-            {
                 path: '/ui-snackbar',
                 component: UiSnackbar,
                 title: 'UiSnackbar',
                 sourceUrl: 'src/UiSnackbarContainer.vue'
             },
             {
-                path: '/ui-switch',
-                component: UiSwitch,
-                title: 'UiSwitch',
-                sourceUrl: 'src/UiSwitch.vue'
-            },
-            {
-                path: '/ui-tabs',
-                component: UiTabs,
-                title: 'UiTabs',
-                sourceUrl: 'src/UiTabs.vue'
-            },
-            {
-                path: '/ui-textbox',
-                component: UiTextbox,
-                title: 'UiTextbox',
-                sourceUrl: 'src/UiTextbox.vue'
-            },
-            {
-                path: '/ui-toolbar',
-                component: UiToolbar,
-                title: 'UiToolbar',
-                sourceUrl: 'src/UiToolbar.vue'
-            },
-            {
                 path: '/ui-tooltip',
                 component: UiTooltip,
                 title: 'UiTooltip',
                 sourceUrl: 'src/UiTooltip.vue'
+            }
+        ]
+    },
+    {
+        title: 'Miscellaneous',
+        menu: [
+            {
+                path: '/ui-icon',
+                component: UiIcon,
+                title: 'UiIcon',
+                sourceUrl: 'src/UiIcon.vue'
             }
         ]
     }
