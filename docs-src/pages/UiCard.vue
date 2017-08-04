@@ -2,10 +2,6 @@
     <section class="page page--ui-card">
         <h2 class="page__title">UiCard</h2>
 
-        <!--<p>UiCheckbox shows a checkbox. It supports keyboard focus, hover and disabled states. The position of the checkbox relative to the label can be changed.</p>-->
-
-        <!--<p>UiCheckbox supports two colors: <code>primary</code> and <code>accent</code>. It also allows for customizing the true and false values.</p>-->
-
         <h3 class="page__section-title">
             Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/src/UiCard.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
