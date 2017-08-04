@@ -28,6 +28,7 @@ import UiTextbox from './pages/UiTextbox.vue';
 import UiToolbar from './pages/UiToolbar.vue';
 import UiTooltip from './pages/UiTooltip.vue';
 
+
 const menu = [
     {
         title: 'Components',
@@ -194,12 +195,12 @@ const menu = [
                 title: 'UiTextbox',
                 sourceUrl: 'src/UiTextbox.vue'
             },
-            {
-                path: '/ui-toolbar',
-                component: UiToolbar,
-                title: 'UiToolbar',
-                sourceUrl: 'src/UiToolbar.vue'
-            },
+            // {
+            //     path: '/ui-toolbar',
+            //     component: UiToolbar,
+            //     title: 'UiToolbar',
+            //     sourceUrl: 'src/UiToolbar.vue'
+            // },
             {
                 path: '/ui-tooltip',
                 component: UiTooltip,
