@@ -7,7 +7,7 @@
         <p>UiSnackbarContainer allows you to create and manage multiple snackbars, controlling their visibility to ensure only one snackbar is shown at a time. The transition and position of snackbars relative to the container can be customized.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiSnackbar.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiSnackbar.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">

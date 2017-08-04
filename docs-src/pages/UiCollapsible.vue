@@ -9,7 +9,7 @@
         <p>UiCollapsible doesn't support accordion sets (i.e. closing other collapsibles when one is opened). You can achieve that effect by listening for <code>@open</code> and <code>@close</code> on each collapsible in the set and then adjusting their <code>open</code> prop accordingly.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiCollapsible.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiCollapsible.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__demo">
@@ -101,7 +101,7 @@
                                 <td><code>false</code></td>
                                 <td>
                                     <p>Whether or not the ripple ink animation on the collapsible header is disabled.</p>
-                                    <p>Can be set using the <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
+                                    <p>Can be set using the <a href="https://github.com/TemperWorks/Nucleus/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
                                     <p>Set to <code>true</code> to disable the ripple ink animation.</p>
                                 </td>
                             </tr>

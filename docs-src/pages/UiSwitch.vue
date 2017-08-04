@@ -7,7 +7,7 @@
         <p>The position of the switch relative to the label can be customized.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiSwitch.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiSwitch.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">

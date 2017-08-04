@@ -7,7 +7,7 @@
         <p>UiRadioGroup can show a label above the group as well as help or error below the group and it allows for resetting the group to its initial state.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiRadioGroup.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiRadioGroup.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">
@@ -155,7 +155,7 @@
                                     <p>Allows for redefining the option keys. The <code>id</code>, <code>class</code>, <code>checked</code>, and <code>disabled</code> keys are optional.</p>
                                     <p>Pass an object with custom keys if your data does not match the default keys.</p>
                                     <p>Note that if you redefine one key, you have to define all the others as well.</p>
-                                    <p>Can be set using the <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
+                                    <p>Can be set using the <a href="https://github.com/TemperWorks/Nucleus/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
                                 </td>
                             </tr>
 

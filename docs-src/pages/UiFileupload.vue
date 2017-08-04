@@ -7,7 +7,7 @@
         <p>UiFileupload allows for selecting multiple files and customizing what type of files to allow.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiFileupload.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiFileupload.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">
@@ -176,7 +176,7 @@
                                 <td><code>false</code></td>
                                 <td>
                                     <p>Whether or not the ripple ink animation is shown when the upload button is clicked.</p>
-                                    <p>Can be set using the <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
+                                    <p>Can be set using the <a href="https://github.com/TemperWorks/Nucleus/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
                                     <p>Set to <code>true</code> to disable the ripple ink animation.</p>
                                 </td>
                             </tr>

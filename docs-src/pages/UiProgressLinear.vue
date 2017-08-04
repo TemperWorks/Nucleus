@@ -7,7 +7,7 @@
         <p>UiProgressLinear supports four colors: <code>primary</code>, <code>accent</code>, <code>black</code> or <code>white</code>.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiProgressLinear.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiProgressLinear.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">

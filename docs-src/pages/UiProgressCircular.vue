@@ -9,7 +9,7 @@
         <p>Due to an issue with CSS transitions on SVG elements in IE and Edge, determinate progress is not animated in those browsers, and <code>multi-color</code> progress is not supported.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiProgressCircular.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiProgressCircular.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">

@@ -8,7 +8,7 @@
         </p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiToolbar.vue"
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiToolbar.vue"
                         target="_blank" rel="noopener">View Source</a>
         </h3>
 

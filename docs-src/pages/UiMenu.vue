@@ -9,7 +9,7 @@
         <p>UiMenu is keyboard accessible and is can be set to contain tab focus in the menu until it is closed.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiMenu.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiMenu.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">
@@ -147,7 +147,7 @@
                                     <p>Allows for redefining the option keys. Only the <code>label</code> key is required.</p>
                                     <p>Pass an object with custom keys if your data does not match the default keys.</p>
                                     <p>Note that if you redefine one key, you have to define all the others as well.</p>
-                                    <p>Can be set using the <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
+                                    <p>Can be set using the <a href="https://github.com/TemperWorks/Nucleus/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
                                 </td>
                             </tr>
 
@@ -157,7 +157,7 @@
                                 <td><code>false</code></td>
                                 <td>
                                     <p>Whether or not the ripple ink animation is disabled.</p>
-                                    <p>Can be set using the <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
+                                    <p>Can be set using the <a href="https://github.com/TemperWorks/Nucleus/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
                                     <p>Set to <code>true</code> to disable the ripple ink animation.</p>
                                 </td>
                             </tr>

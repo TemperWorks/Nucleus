@@ -9,7 +9,7 @@
         <p>UiDatepicker can show a label above the input, an icon, as well as help or error below the input. It is keyboard accessible and supports a disabled state. The calendar popover may drop up or down based on the available space.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiDatepicker.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiDatepicker.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">

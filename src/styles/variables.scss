@@ -2,14 +2,14 @@
 @import 'md-colors';
 
 // The UI font stack
-$font-stack                     : Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-stack                     : Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif !default;
 
 // Base font size
 $base-font-size                 : 100% !default; // typically 16px in most browsers
 
 // Brand colors
-$brand-primary-color            : $md-blue !default;
-$brand-accent-color             : $md-purple-a400 !default;
+$brand-primary-color            : $md-deep-purple-400 !default;
+$brand-accent-color             : $md-deep-purple-a400 !default;
 
 // Primary text color
 $primary-text-color             : rgba(black, 0.87) !default;

@@ -13,7 +13,7 @@
         <p>The modal will automatically add a vertical scrollbar to its body when the content overflows the available space.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiModal.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiModal.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__demo">

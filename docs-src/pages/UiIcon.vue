@@ -25,7 +25,7 @@
         <p>If you are using an SVG sprite, set <code>useSvg</code> to <code>true</code> and set the <code>icon</code> prop to the icon symbol's <code>id</code> in your sprite. This will render the correct <code>&lt;svg&gt;</code> and <code>&lt;use&gt;</code> tags referencing the icon.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiIcon.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiIcon.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">

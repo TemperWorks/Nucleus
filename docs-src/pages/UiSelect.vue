@@ -7,7 +7,7 @@
         <p>UiSelect can show a label above the input, an icon, as well as help or error below the input. It is keyboard accessible and supports a disabled state.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiSelect.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiSelect.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">
@@ -370,7 +370,7 @@
                                     <p>Allows for redefining each option object's keys.</p>
                                     <p>Pass an object with custom keys if your data does not match the default keys.</p>
                                     <p>Note that if you redefine one key, you have to define all the others as well.</p>
-                                    <p>Can be set using the <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
+                                    <p>Can be set using the <a href="https://github.com/TemperWorks/Nucleus/blob/master/Customization.md#global-config" target="_blank" rel="noopener">global config</a>.</p>
                                 </td>
                             </tr>
 

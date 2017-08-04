@@ -9,7 +9,7 @@ f<template>
         <p>To show a group of mutually exclusive radio buttons, use <a href="#/ui-radio-group">UiRadioGroup</a> or use multiple UiRadios with a shared <code>v-model</code>/<code>value</code> and <code>name</code> prop.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiRadio.vue" target="_blank" rel="noopener">View Source</a>
+            Examples <a href="https://github.com/TemperWorks/Nucleus/blob/master/docs-src/pages/UiRadio.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">
