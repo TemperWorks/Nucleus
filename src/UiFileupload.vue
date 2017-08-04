@@ -241,12 +241,12 @@ export default {
     }
 
     &.is-raised {
-        box-shadow: 0 0 2px rgba(black, 0.12), 0 2px 2px rgba(black, 0.2);
+        box-shadow: $shadow-raised;
         transition: box-shadow 0.1s;
 
         &.has-focus-ring.is-active,
         body[modality="keyboard"] &.is-active {
-            box-shadow: 0 0 5px rgba(black, 0.22), 0 3px 6px rgba(black, 0.3);
+            box-shadow: $shadow-raised;
         }
     }
 

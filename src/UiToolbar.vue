@@ -132,7 +132,7 @@ $ui-toolbar-height      : rem-calc(56px) !default;
     position: relative;
 
     &.is-raised {
-        box-shadow: 0 0 2px rgba(black, 0.12), 0 2px 2px rgba(black, 0.2);
+        box-shadow: $shadow-raised;
     }
 
     &:not(.is-raised).ui-toolbar--type-default {

@@ -346,7 +346,7 @@ export default {
 
     &.is-raised {
         border: none;
-        box-shadow: 0 0 2px rgba(black, 0.12), 0 2px 2px rgba(black, 0.2);
+        box-shadow: $shadow-raised;
 
         .ui-tabs__body {
             border: none;
