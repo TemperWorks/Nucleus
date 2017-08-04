@@ -14,7 +14,8 @@ module.exports = {
             helpers: 'src/helpers',
             mixins: 'src/mixins',
             styles: 'src/styles',
-            vue$: 'vue/dist/vue.common.js'
+            vue$: 'vue/dist/vue.common.js',
+            fonts: 'src/resources/fonts'
         },
 
         extensions: ['.js', '.json', '.vue', '.scss']

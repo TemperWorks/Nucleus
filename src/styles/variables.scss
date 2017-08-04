@@ -1,5 +1,6 @@
 // The Material Design color palette
 @import 'md-colors';
+@import 'nucleus-colors';
 
 // The UI font stack
 $font-stack                     : Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif !default;
@@ -8,7 +9,7 @@ $font-stack                     : Proxima Nova,Helvetica Neue,Helvetica,Arial,sa
 $base-font-size                 : 100% !default; // typically 16px in most browsers
 
 // Brand colors
-$brand-primary-color            : $md-deep-purple-400 !default;
+$brand-primary-color            : $nucleus-purple !default;
 $brand-accent-color             : $md-deep-purple-a400 !default;
 
 // Primary text color

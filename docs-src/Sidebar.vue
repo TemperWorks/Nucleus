@@ -109,7 +109,7 @@
                 const component = window.location.hash + (version === '0.8.9' ? '-docs' : '');
 
                 if (window.location.hostname === 'temperworks.github.io') {
-                    root = 'https://temperworks.github.io/Nucleus-UI-Kit';
+                    root = 'https://temperworks.github.io/Nucleus';
                 }
 
                 window.location = `${root}/${version}/${component}`;

@@ -13,7 +13,7 @@ const config = merge(base, {
     output: {
         filename: options.isProduction ? 'nucleus-ui-kit.min.js' : 'nucleus-ui-kit.js',
         path: options.paths.output.main,
-        library: 'KeenUI',
+        library: 'NucleusUIKit',
         libraryTarget: 'umd'
     },
 
