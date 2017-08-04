@@ -15,7 +15,6 @@ Nucleus is **not** a CSS framework, and as such you won't find a grid system or 
 * [Vue.js](http://vuejs.org/) (^v2.1.4)
 
 Optional
-* [Roboto font](https://www.google.com/fonts/specimen/Roboto) (Normal 400, Medium 500)
 * [Material Icons font](http://google.github.io/material-design-icons/#icon-font-for-the-web)
 
 ## Browser support
