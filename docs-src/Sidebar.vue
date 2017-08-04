@@ -5,11 +5,11 @@
 
             <a
                 class="nucleus-docs-sidebar__header-version"
-                href="https://github.com/temperworks/Nucleus-UI-Kit/releases/tag/v0.0.1"
+                href="https://github.com/temperworks/Nucleus-UI-Kit/releases/tag/v0.1.2"
                 rel="noopener"
                 target="_blank"
                 title="View release notes"
-            >v0.0.1</a>
+            >v0.1.2</a>
 
             <a
                 class="nucleus-docs-sidebar__header-github-link"
@@ -32,7 +32,7 @@
 
             <div class="nucleus-docs-sidebar__version-select">
                 <ui-select
-                    :options="['0.8.9', '1.0.0']"
+                    :options="['0.1.2']"
                     @select="onVersionSelect"
                     v-model="version"
                 >Version</ui-select>
@@ -90,14 +90,14 @@ import UiSelect from 'src/UiSelect.vue';
 export default {
     data() {
         return {
-            version: '1.0.0',
+            version: '0.1.2',
             menu: Routes.menu
         };
     },
 
     methods: {
         onVersionSelect(version) {
-            if (version === '1.0.0') {
+            if (version === '0.1.2') {
                 return;
             }
 
