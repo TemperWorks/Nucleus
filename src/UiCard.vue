@@ -6,6 +6,7 @@
 
         <h3 v-html="title" v-if="type === 'default'"></h3>
         <h4 v-html="title" v-if="type === 'small'"></h4>
+        <span class="ui-card__subtitle" v-html="subtitle" v-if="subtitle !== null"></span>
 
         <slot name="content"></slot>
     </div>
@@ -24,6 +25,12 @@
         font-weight: 400;
         line-height: 1.1;
         color: inherit;
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     .ui-card {
@@ -47,26 +54,32 @@
         h4 {
             font-size: 1.5rem;
 
+            margin-bottom: 16px;
         }
 
+        &__subtitle {
+            line-height: 1.4em;
+            font-weight: 400;
+            font-size: 1.125rem;
+        }
 
         &__divider {
             width: 100%;
             height: 1px;
-            margin: 12px auto 6px;
+            margin: 12px auto;
             background: #d8d8d8;
 
-            &:first-of-type {
-                margin: 0 auto 12px;
-            }
+            /*&:first-of-type {*/
+                /*margin: 0 auto 12px;*/
+            /*}*/
 
-            &:last-of-type {
-                margin: 12px auto 0;
-            }
+            /*&:last-of-type {*/
+                /*margin: 12px auto 0;*/
+            /*}*/
 
-            @media only screen and (min-width: 768px) {
-                margin: 12px auto 6px;
-            }
+            /*@media only screen and (min-width: 768px) {*/
+                /*margin: 12px auto 6px;*/
+            /*}*/
         }
 
         &--type-default {
@@ -113,6 +126,10 @@
             title: {
                 type: String,
                 default: ''
+            },
+            subtitle: {
+                type: String,
+                default: null
             }
         },
 

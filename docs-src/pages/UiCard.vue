@@ -30,10 +30,12 @@
             <h4 class="page__demo-title">Small</h4>
 
             <div class="page__demo-group">
-                <ui-card type="small" title="Strandtent de Pit">
+                <ui-card type="small" title="Strandtent de Pit" subtitle="Nieuwlandsedijk 20 <br/> 2691KW 's-Gravenzande">
                     <template slot="content">
                         <div class="ui-card__divider"></div>
-
+                        <h4 class="ui-card__subtitle">
+                            Footer example
+                        </h4>
                     </template>
                 </ui-card>
             </div>
