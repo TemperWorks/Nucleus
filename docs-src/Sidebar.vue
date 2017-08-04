@@ -63,58 +63,63 @@
                     </ul>
                 </li>
 
-                <li class="nucleus-docs-sidebar__menu-section" v-for="section in menu">
-                    <div class="nucleus-docs-sidebar__menu-section-header">{{ section.title }}</div>
+                <!--<li class="nucleus-docs-sidebar__menu-section" v-for="section in menu">-->
+                    <!--<div class="nucleus-docs-sidebar__menu-section-header">{{ section.title }}</div>-->
 
-                    <ul class="nucleus-docs-sidebar__menu-section-links">
-                        <li v-for="item in section.menu">
-                            <router-link
-                                class="nucleus-docs-sidebar__menu-item" exact
-                                :to="item.path"
-                            >
-                                {{ item.title }}
-                            </router-link>
-                        </li>
-                    </ul>
-                </li>
+                    <ui-collapsible v-for="section in menu" :title="section.title" type="flat">
+                        <!--<ul class="nucleus-docs-sidebar__menu-section-links">-->
+                            <li v-for="item in section.menu">
+                                <router-link
+                                    class="nucleus-docs-sidebar__menu-item" exact
+                                    :to="item.path"
+                                >
+                                    {{ item.title }}
+                                </router-link>
+                            </li>
+                        <!--</ul>-->
+                    </ui-collapsible>
+
+
+                <!--</li>-->
             </ul>
         </div>
     </aside>
 </template>
 
 <script>
-import Routes from './routes.js';
-import UiIcon from 'src/UiIcon.vue';
-import UiSelect from 'src/UiSelect.vue';
+    import UiCollapsible from 'src/UiCollapsible.vue'
+    import Routes from './routes.js';
+    import UiIcon from 'src/UiIcon.vue';
+    import UiSelect from 'src/UiSelect.vue';
+    export default {
+        data() {
+            return {
+                version: '0.1.2',
+                menu: Routes.menu
+            };
+        },
 
-export default {
-    data() {
-        return {
-            version: '0.1.2',
-            menu: Routes.menu
-        };
-    },
+        methods: {
+            onVersionSelect(version) {
+                if (version === '0.1.2') {
+                    return;
+                }
 
-    methods: {
-        onVersionSelect(version) {
-            if (version === '0.1.2') {
-                return;
+                let root = '';
+                const component = window.location.hash + (version === '0.8.9' ? '-docs' : '');
+
+                if (window.location.hostname === 'temperworks.github.io') {
+                    root = 'https://temperworks.github.io/Nucleus-UI-Kit';
+                }
+
+                window.location = `${root}/${version}/${component}`;
             }
+        },
 
-            let root = '';
-            const component = window.location.hash + (version === '0.8.9' ? '-docs' : '');
-
-            if (window.location.hostname === 'temperworks.github.io') {
-                root = 'https://temperworks.github.io/Nucleus-UI-Kit';
-            }
-
-            window.location = `${root}/${version}/${component}`;
+        components: {
+            UiIcon,
+            UiSelect,
+            UiCollapsible
         }
-    },
-
-    components: {
-        UiIcon,
-        UiSelect
-    }
-};
+    };
 </script>

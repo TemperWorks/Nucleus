@@ -1,9 +1,8 @@
 <template>
-    <div class="ui-card">
+    <div class="ui-card" :class="classes">
         <slot>
 
         </slot>
-
     </div>
 </template>
 
@@ -58,6 +57,11 @@
         &--type-default {
 
         }
+
+        &.is-raised {
+            border: none;
+            box-shadow: 0 1px 1px rgba(0,0,0,.25);
+        }
     }
 </style>
 
@@ -72,17 +76,21 @@
             type: {
                 type: String,
                 default: 'default' // 'default', .... more to come
+            },
+            raised: {
+                type: Boolean,
+                default: false
             }
         },
 
         computed: {
             classes() {
                 return [
-                    `ui-card--type-${this.type}`
+                    `ui-card--type-${this.type}`,
+                    { 'is-raised': this.raised }
                 ];
             }
         },
-
         methods: {
             dismissAlert() {
                 this.$emit('dismiss');

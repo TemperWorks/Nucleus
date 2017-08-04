@@ -111,12 +111,11 @@
     color: rgba(black, 0.87);
     display: flex;
     padding: rem-calc(12px);
-    padding-left: rem-calc(40px);
+    padding-left: rem-calc(15px);
 
     &.is-active {
         color: $link-color;
         font-weight: 500;
-        background-color: rgba(black, 0.05);
     }
 
     &:hover,

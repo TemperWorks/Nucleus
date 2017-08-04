@@ -75,6 +75,10 @@ export default {
         disabled: {
             type: Boolean,
             default: false
+        },
+        type: {
+            type: String,
+            default: '' // flat
         }
     },
 
@@ -92,7 +96,8 @@ export default {
         classes() {
             return [
                 { 'is-open': this.isOpen },
-                { 'is-disabled': this.disabled }
+                { 'is-disabled': this.disabled },
+                { 'ui-collapsible--flat': this.type === 'flat' }
             ];
         },
 
@@ -172,7 +177,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 
 .ui-collapsible {
     font-family: $font-stack;
-    margin-bottom: rem-calc(8px);
+    margin-bottom: .5rem;
     width: 100%;
 
     &:not(.is-disabled) {
@@ -198,6 +203,24 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 
         .ui-collapsible__header-icon {
             cursor: default;
+        }
+    }
+
+    // Reference to the parent selector
+    $block: &;
+
+    &--flat {
+        margin-bottom: 0;
+
+        #{$block}__header {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 1rem;
+        }
+
+        #{$block}__body {
+            padding: 0;
         }
     }
 }

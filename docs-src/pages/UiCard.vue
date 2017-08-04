@@ -17,10 +17,14 @@
                 </ui-card>
             </div>
 
-            <h4 class="page__demo-title">Color: accent</h4>
+            <h4 class="page__demo-title">Raised</h4>
 
             <div class="page__demo-group">
+                <ui-card raised>
+                    <ui-breadcrumb :items="breadcrumbs">
 
+                    </ui-breadcrumb>
+                </ui-card>
             </div>
         </div>
 
