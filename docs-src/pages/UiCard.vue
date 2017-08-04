@@ -14,28 +14,36 @@
                     <ui-breadcrumb-container :items="breadcrumbs" slot="breadcrumbs">
 
                     </ui-breadcrumb-container>
+
+                    <template slot="content">
+                        <card-title>3 shifts gevonden voor <a href='#'>Bartending</a> bij <a href='#'>Strandtent de Pit</a></card-title>
+                    </template>
                 </ui-card>
             </div>
 
             <h4 class="page__demo-title">Raised</h4>
 
             <div class="page__demo-group">
-                <ui-card raised title="3 shifts gevonden voor <a href='#'>Bartending</a> bij <a href='#'>Strandtent de Pit</a>">
+                <ui-card raised>
                     <ui-breadcrumb-container :items="breadcrumbs" slot="breadcrumbs">
 
                     </ui-breadcrumb-container>
+
+                    <template slot="content">
+                        <card-title>3 shifts gevonden voor <a href='#'>Bartending</a> bij <a href='#'>Strandtent de Pit</a></card-title>
+                    </template>
                 </ui-card>
             </div>
 
             <h4 class="page__demo-title">Small</h4>
 
             <div class="page__demo-group">
-                <ui-card type="small" title="Strandtent de Pit" subtitle="Nieuwlandsedijk 20 <br/> 2691KW 's-Gravenzande">
+                <ui-card type="small">
                     <template slot="content">
-                        <div class="ui-card__divider"></div>
-                        <h4 class="ui-card__subtitle">
-                            Footer example
-                        </h4>
+                        <card-title>Strandtent de Pit</card-title>
+                        <card-subtitle>Nieuwlandsedijk 20 <br/> 2691KW 's-Gravenzande</card-subtitle>
+                        <card-divider></card-divider>
+                        <card-subtitle>Footer example</card-subtitle>
                     </template>
                 </ui-card>
             </div>
@@ -57,7 +65,12 @@
                         </thead>
 
                         <tbody>
-
+                            <tr>
+                                <td>type</td>
+                                <td>string</td>
+                                <td>default</td>
+                                <td>Type of the card (default, small)</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -130,12 +143,14 @@
                 ]
             }
         },
-
         components: {
             UiBreadcrumbContainer,
             UiCard,
             UiTab,
-            UiTabs
+            UiTabs,
+            'card-title': UiCard.Components.Title,
+            'card-subtitle': UiCard.Components.Subtitle,
+            'card-divider': UiCard.Components.Divider
         }
     };
 </script>

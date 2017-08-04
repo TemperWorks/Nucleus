@@ -4,11 +4,9 @@
 
         </slot>
 
-        <h3 v-html="title" v-if="type === 'default'"></h3>
-        <h4 v-html="title" v-if="type === 'small'"></h4>
-        <span class="ui-card__subtitle" v-html="subtitle" v-if="subtitle !== null"></span>
+        <slot name="content">
 
-        <slot name="content"></slot>
+        </slot>
     </div>
 </template>
 
@@ -22,15 +20,9 @@
     h5,
     h6 {
         font-family: inherit;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.1;
         color: inherit;
-    }
-
-    a {
-        &:hover {
-            text-decoration: none;
-        }
     }
 
     .ui-card {
@@ -42,19 +34,17 @@
 
         h3, h4 {
             margin: 0;
-            color: $nucleus-black;
             line-height: 1.2em;
-            font-weight: 300;
         }
 
-        h3 {
+        &__title {
             font-size: 1.75rem;
-        }
-
-        h4 {
-            font-size: 1.5rem;
-
-            margin-bottom: 16px;
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+                font-weight: 700;
+            }
         }
 
         &__subtitle {
@@ -68,18 +58,6 @@
             height: 1px;
             margin: 12px auto;
             background: #d8d8d8;
-
-            /*&:first-of-type {*/
-                /*margin: 0 auto 12px;*/
-            /*}*/
-
-            /*&:last-of-type {*/
-                /*margin: 12px auto 0;*/
-            /*}*/
-
-            /*@media only screen and (min-width: 768px) {*/
-                /*margin: 12px auto 6px;*/
-            /*}*/
         }
 
         &--type-default {
@@ -110,8 +88,26 @@
 </style>
 
 <script>
+    import Vue from 'vue'
 
     export default {
+        Components: {
+            Title: {
+                template: `
+                    <h3 class="ui-card__title"><slot></slot></h3>
+                `
+            },
+            Subtitle: {
+                template: `
+                    <h4 class="ui-card__subtitle"><slot></slot></h4>
+                `
+            },
+            Divider: {
+                template: `
+                    <div class="ui-card__divider"></div>
+                `
+            }
+        },
         name: 'ui-card',
 
         props: {
@@ -150,5 +146,5 @@
         components: {
 
         }
-    };
+    }
 </script>

@@ -18,6 +18,7 @@
             cursor: pointer;
             outline: none;
             text-decoration: none;
+            font-weight: 400;
             &:hover {
                 color: $brand-primary-color;
             }
