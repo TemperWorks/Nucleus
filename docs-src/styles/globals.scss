@@ -1,5 +1,16 @@
-* {
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgba(black, 0.87);
+    font-family: $font-stack;
+}
+
+:focus {
+    outline: 0;
 }
 
 html,
@@ -9,14 +20,11 @@ body {
 }
 
 html {
-    font-size: $base-font-size;
+    min-height: 100%;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
-body {
-    color: rgba(black, 0.87);
-    font-family: $font-stack;
-    font-size: rem-calc(15px);
-}
 
 a {
 	color: $link-color;

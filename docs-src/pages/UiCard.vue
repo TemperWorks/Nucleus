@@ -7,23 +7,34 @@
         </h3>
 
         <div class="page__examples">
-            <h4 class="page__demo-title">Basic</h4>
+            <h4 class="page__demo-title">Basic with navigation breadcrumbs</h4>
 
             <div class="page__demo-group">
-                <ui-card>
-                    <ui-breadcrumb :items="breadcrumbs">
+                <ui-card title="3 shifts gevonden voor <a href='#'>Bartending</a> bij <a href='#'>Strandtent de Pit</a>">
+                    <ui-breadcrumb-container :items="breadcrumbs" slot="breadcrumbs">
 
-                    </ui-breadcrumb>
+                    </ui-breadcrumb-container>
                 </ui-card>
             </div>
 
             <h4 class="page__demo-title">Raised</h4>
 
             <div class="page__demo-group">
-                <ui-card raised>
-                    <ui-breadcrumb :items="breadcrumbs">
+                <ui-card raised title="3 shifts gevonden voor <a href='#'>Bartending</a> bij <a href='#'>Strandtent de Pit</a>">
+                    <ui-breadcrumb-container :items="breadcrumbs" slot="breadcrumbs">
 
-                    </ui-breadcrumb>
+                    </ui-breadcrumb-container>
+                </ui-card>
+            </div>
+
+            <h4 class="page__demo-title">Small</h4>
+
+            <div class="page__demo-group">
+                <ui-card type="small" title="Strandtent de Pit">
+                    <template slot="content">
+                        <div class="ui-card__divider"></div>
+
+                    </template>
                 </ui-card>
             </div>
         </div>
@@ -93,7 +104,7 @@
 </template>
 
 <script>
-    import UiBreadcrumb from 'src/UiBreadcrumb.vue';
+    import UiBreadcrumbContainer from 'src/UiBreadcrumbContainer.vue';
     import UiCard from 'src/UiCard.vue';
     import UiTab from 'src/UiTab.vue';
     import UiTabs from 'src/UiTabs.vue';
@@ -105,13 +116,21 @@
                     {
                         title: 'Home',
                         url: '#'
+                    },
+                    {
+                        title: 'Bartending',
+                        url: '#'
+                    },
+                    {
+                        title: 'Strandtent de Pit',
+                        url: '#'
                     }
                 ]
             }
         },
 
         components: {
-            UiBreadcrumb,
+            UiBreadcrumbContainer,
             UiCard,
             UiTab,
             UiTabs

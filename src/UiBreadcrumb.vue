@@ -1,24 +1,23 @@
 <template>
-    <div class="ui-breadcrumb">
-        <a v-for="breadcrumb in items" :href="breadcrumb.url">{{ breadcrumb.title }}</a>
+    <span class="ui-breadcrumb">
+        <a :href="item.url">{{ item.title }}</a>
         <span class="ui-breadcrumb__arrow">›</span>
-    </div>
+    </span>
 </template>
 
 <style lang="scss">
     @import './styles/imports';
 
     .ui-breadcrumb {
-        -webkit-animation: slideFromBottom 1s forwards;
+        padding: 0 3px;
 
         a {
-            color: $md-grey-800;
+            color: $nucleus-black;
             margin: 4px 0 15px;
             font-size: .9375rem;
             cursor: pointer;
             outline: none;
             text-decoration: none;
-
             &:hover {
                 color: $brand-primary-color;
             }
@@ -40,9 +39,8 @@
         name: 'ui-breadcrumb',
 
         props: {
-            items: {
-                type: Array,
-                default: [],
+            item: {
+                type: Object,
                 required: true
             }
         },
