@@ -117,14 +117,4 @@
 
 <style lang="scss">
     @import '~styles/imports';
-
-    /*.page--ui-checckbox {*/
-        /*.page__demo-group {*/
-            /*margin-bottom: rem-calc(32px);*/
-
-            /*&.has-box-right {*/
-                /*max-width: rem-calc(200px);*/
-            /*}*/
-        /*}*/
-    /*}*/
 </style>
