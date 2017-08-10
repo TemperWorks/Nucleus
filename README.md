@@ -2,6 +2,10 @@
 
 > The central and most important part of an object, movement, or group, forming the basis for its activity and growth.
 
+![](./logo_450x450.png)
+
+Check out the awesome animating logo [here](https://codepen.io/nielsderijk/full/oeBgMB/)
+
 The Nucleus UI Kit is designed to be the centerpiece of our front-end work over at Temper. It is a UI library based on [Vue.js](http://vuejs.org) with a simple API. Its designed is inspired by Material Design with a big influence of our amazing designers. The Nucleus UI Kit is no exact implementation of the Material design spec.
 
 ## Documentation and demo
