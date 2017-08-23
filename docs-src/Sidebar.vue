@@ -5,7 +5,7 @@
 
             <a
                 class="nucleus-docs-sidebar__header-version"
-                href="https://github.com/temperworks/Nucleus-UI-Kit/releases/tag/v0.1.2"
+                href="https://github.com/temperworks/Nucleus/releases/tag/v0.1.2"
                 rel="noopener"
                 target="_blank"
                 title="View release notes"
