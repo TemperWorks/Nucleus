@@ -92,23 +92,16 @@ $ui-fab-size--small     : rem-calc(40px) !default;
     align-items: center;
     border-radius: 50%;
     border: none;
-    box-shadow: 0 2px 5px 0 rgba(black, 0.2), 0 2px 10px 0 rgba(black, 0.16);
     cursor: pointer;
     display: flex;
     justify-content: center;
     outline: none;
     position: relative;
-    transition: box-shadow 0.3s ease;
     z-index: $z-index-fab;
 
     // Remove the Firefox dotted outline
     &::-moz-focus-inner {
         border: 0;
-    }
-
-    &:hover,
-    body[modality="keyboard"] &:focus {
-        box-shadow: 0 8px 17px 0 rgba(black, 0.25), 0 6px 20px 0 rgba(black, 0.2);
     }
 
     body[modality="keyboard"] &:focus {
