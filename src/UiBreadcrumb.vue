@@ -12,7 +12,7 @@
         padding: 0 3px;
 
         a {
-            color: $nucleus-black;
+            color: $primary-text-color;
             margin: 4px 0 15px;
             font-size: .9375rem;
             cursor: pointer;

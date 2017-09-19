@@ -41,6 +41,11 @@
             "name": "Yordi de Kleijn",
             "email": "yordi@temper.works",
             "url": "https://github.com/YordiLorenzo"
+        },
+        {
+            "name": "Niels de Rijk",
+            "email": "n.derijk@temper.works",
+            "url": "https://github.com/NielsdeRijk"
         }
     ],
     "license": "MIT",

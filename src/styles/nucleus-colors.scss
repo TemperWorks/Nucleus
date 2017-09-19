@@ -1,2 +1,19 @@
-$nucleus-purple: #6457b5;
-$nucleus-black: #333b4d;
+// Brand colors
+$brand-primary-color            : #6457b5 !default;
+$brand-secondary-color          : #0eda97 !default;
+$brand-accent-color             : #000000 !default;
+
+// Primary text color
+$primary-text-color             : rgba(black, 0.9) !default;
+
+// Secondary text color
+$secondary-text-color           : rgba(black, 0.54) !default;
+
+// Hint text color
+$hint-text-color                : rgba(black, 0.38) !default;
+
+// Disabled text color
+$disabled-text-color            : $hint-text-color !default;
+
+// Divider color
+$divider-color                  : rgba(black, 0.12) !default;
