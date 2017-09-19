@@ -5,12 +5,12 @@
 // The UI font stack
 $font-stack                     : Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif !default;
 
-// Base font size
-$base-font-size                 : 100% !default; // typically 16px in most browsers
-
 // ================================================
 // Font-sizes
 // ================================================
+
+// Base font size
+$base-font-size                     : 100% !default; // typically 16px in most browsers
 
 $ui-button-font-size                : 1rem;
 $ui-input-label-font-size           : 1.1rem;
