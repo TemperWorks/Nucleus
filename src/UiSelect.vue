@@ -46,7 +46,7 @@
                     </div>
 
                     <ui-icon class="ui-select__dropdown-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.984 9.984h10.03L12 15z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M.9 2.85L7.94 9.9l7.07-7.05c.5-.5.5-1.3 0-1.8-.5-.48-1.3-.48-1.8 0l-5.27 5.3-5.27-5.3c-.5-.48-1.3-.48-1.8 0-.48.5-.48 1.3 0 1.8"/></svg>
                     </ui-icon>
                 </div>
 
@@ -629,7 +629,7 @@ export default {
             &.is-inline {
                 color: $ui-input-label-color; // So the hover styles don't override it
                 cursor: pointer;
-                transform: translateY($ui-input-label-top--inline) scale(1.1);
+                transform: translateY($ui-input-label-top--inline) scale(1.2);
             }
 
             &.is-floating {
@@ -839,6 +839,7 @@ export default {
     overflow-y: auto;
     padding: 0;
     position: relative;
+    font-size: $ui-input-label-font-size;
 }
 
 .ui-select__no-results {
