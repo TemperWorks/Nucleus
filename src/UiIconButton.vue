@@ -191,7 +191,7 @@ export default {
 @import './styles/imports';
 
 $ui-icon-button-size            : rem-calc(36px) !default;
-$ui-icon-button--size-small     : rem-calc(32px) !default;
+$ui-icon-button--size-small     : rem-calc(26px) !default;
 $ui-icon-button--size-large     : rem-calc(48px) !default;
 
 .ui-icon-button {
