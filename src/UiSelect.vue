@@ -46,7 +46,7 @@
                     </div>
 
                     <ui-icon class="ui-select__dropdown-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.984 9.984h10.03L12 15z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M.9 2.85L7.94 9.9l7.07-7.05c.5-.5.5-1.3 0-1.8-.5-.48-1.3-.48-1.8 0l-5.27 5.3-5.27-5.3c-.5-.48-1.3-.48-1.8 0-.48.5-.48 1.3 0 1.8"/></svg>
                     </ui-icon>
                 </div>
 
@@ -629,7 +629,7 @@ export default {
             &.is-inline {
                 color: $ui-input-label-color; // So the hover styles don't override it
                 cursor: pointer;
-                transform: translateY($ui-input-label-top--inline) scale(1.1);
+                transform: translateY($ui-input-label-top--inline) scale(1.2);
             }
 
             &.is-floating {
@@ -679,6 +679,8 @@ export default {
     }
 
     &.is-disabled {
+        opacity: $ui-input-text-opacity--disabled;
+
         .ui-select__display {
             border-bottom-style: $ui-input-border-style--disabled;
             border-bottom-width: $ui-input-border-width--active;
@@ -769,18 +771,21 @@ export default {
 
 .ui-select__dropdown {
     background-color: white;
-    box-shadow: 1px 2px 8px $md-grey-600;
+    box-shadow: none;
     color: $primary-text-color;
     display: block;
     list-style-type: none;
     margin: 0;
     margin-bottom: rem-calc(8px);
-    min-width: rem-calc(180px);
+    min-width: rem-calc(100px);
     outline: none;
     padding: 0;
     position: absolute;
     width: 100%;
     z-index: $z-index-dropdown;
+    border-color: $ui-input-dropdown-border-color;
+    border-width: $ui-input-dropdown-border-width;
+    border-style: $ui-input-dropdown-border-style;
 }
 
 .ui-select__search-input {
@@ -839,6 +844,8 @@ export default {
     overflow-y: auto;
     padding: 0;
     position: relative;
+    font-size: $ui-input-label-font-size;
+    z-index: 10000;
 }
 
 .ui-select__no-results {

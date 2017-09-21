@@ -222,27 +222,25 @@ export default {
 @import './styles/imports';
 
 .ui-button {
-    align-items: center;
-    background: none;
-    border-radius: $ui-default-border-radius;
-    border: none;
-    cursor: pointer;
+    position: relative;
     display: inline-flex;
-    font-family: $font-stack;
-    font-size: $ui-button-font-size;
-    font-weight: 500;
-    height: $ui-button-height;
+    align-items: center;
     justify-content: center;
-    letter-spacing: 0.02em;
-    line-height: 1;
     min-width: rem-calc(80px);
-    outline: none;
-    overflow: hidden;
-    padding: 0;
+    height: $ui-button-height;
+    min-height: 42px;
     padding-left: rem-calc(16px);
     padding-right: rem-calc(16px);
-    position: relative;
-    text-transform: uppercase;
+    background: none;
+    border: none;
+    border-radius: $ui-default-border-radius;
+    cursor: pointer;
+    font-family: $font-stack;
+    font-size: $ui-button-font-size;
+    font-weight: 600;
+    line-height: 1;
+    outline: none;
+    overflow: hidden;
     touch-action: manipulation; // IE
 
     // Remove the Firefox dotted outline
@@ -437,7 +435,7 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($brand-primary-color, 10%);
+            background-color: darken($brand-primary-color, 6%);
         }
     }
 
@@ -448,18 +446,18 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($brand-accent-color, 10%);
+            background-color: darken($brand-accent-color, 6%);
         }
     }
 
     &.ui-button--color-green {
-        background-color: $md-green;
+        background-color: $brand-secondary-color;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($md-green, 10%);
+            background-color: darken($brand-secondary-color, 6%);
         }
     }
 
@@ -470,7 +468,7 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($md-orange, 10%);
+            background-color: darken($md-orange, 6%);
         }
     }
 
@@ -481,7 +479,7 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($md-red, 10%);
+            background-color: darken($md-red, 6%);
         }
     }
 }
@@ -493,7 +491,7 @@ export default {
     &.has-dropdown-open,
     &.has-focus-ring:focus,
     body[modality="keyboard"] &:focus {
-        background-color: darken($md-grey-200, 3%);
+        background-color: darken($md-grey-50, 2%);
     }
 
     &.ui-button--color-default {
