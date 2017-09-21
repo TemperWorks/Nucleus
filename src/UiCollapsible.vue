@@ -233,7 +233,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
     line-height: 1.5;
     margin: 0;
     min-height: rem-calc(48px);
-    padding: rem-calc(12px 16px);
+    padding: rem-calc(16px 20px);
     position: relative;
     touch-action: manipulation; // IE
     width: 100%;
@@ -262,7 +262,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 
 .ui-collapsible__body {
     display: block;
-    padding: rem-calc(16px);
+    padding: rem-calc(20px);
     width: 100%;
 }
 
