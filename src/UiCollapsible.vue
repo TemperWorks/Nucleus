@@ -177,7 +177,6 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 
 .ui-collapsible {
     font-family: $font-stack;
-    margin-bottom: .5rem;
     width: 100%;
 
     &:not(.is-disabled) {
@@ -216,7 +215,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
             color: rgba(0, 0, 0, 0.7);
             font-size: 1.1em;
             font-weight: bold;
-            padding: 1rem;
+            padding: rem-calc(24px);
         }
 
         #{$block}__body {
@@ -262,8 +261,6 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 }
 
 .ui-collapsible__body {
-    border-top: 0;
-    border: 1px solid $md-grey-200;
     display: block;
     padding: rem-calc(16px);
     width: 100%;
