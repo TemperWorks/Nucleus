@@ -9,6 +9,9 @@ deploy:
   local_dir: docs
   on:
     branch: master
+  provider: npm
+    email: "yordilorenzo@gmail.com"
+    api_key: $NPM_TOKEN    
 cache:
   directories:
     - "node_modules"    
