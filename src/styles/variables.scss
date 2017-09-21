@@ -37,6 +37,7 @@ $ui-input-label-top--inline         : rem-calc(26px) !default;
 $ui-input-text-color                : $primary-text-color !default;
 $ui-input-text-color--disabled      : $disabled-text-color !default;
 $ui-input-text-color--invalid       : $md-red !default;
+$ui-input-text-opacity--disabled    : 0.4 !default;
 $ui-input-text-font-size            : rem-calc(16px) !default;
 
 // Input border
@@ -46,7 +47,7 @@ $ui-input-border-color--active      : $brand-primary-color !default;
 $ui-input-border-color--invalid     : $md-red !default;
 $ui-input-border-width              : 2px !default;
 $ui-input-border-width--active      : 2px !default;
-$ui-input-border-style--disabled    : dotted !default;
+$ui-input-border-style--disabled    : solid !default;
 
 // Input icons
 $ui-input-icon-color                    : $secondary-text-color !default;
@@ -86,6 +87,9 @@ $ui-button-height--large            : rem-calc(48px) !default;
 // Dropdowns (UiAutocomplete, UiPopover, UiMenu, UiSelect)
 // ================================================
 
+$ui-input-dropdown-border-color     : $divider-color !default;
+$ui-input-dropdown-border-width     : 1px !default;
+$ui-input-dropdown-border-style     : solid !default;
 $ui-dropdown-item-font-size         : rem-calc(15px) !default;
 
 // ================================================

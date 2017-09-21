@@ -679,6 +679,8 @@ export default {
     }
 
     &.is-disabled {
+        opacity: $ui-input-text-opacity--disabled;
+
         .ui-select__display {
             border-bottom-style: $ui-input-border-style--disabled;
             border-bottom-width: $ui-input-border-width--active;
@@ -769,18 +771,21 @@ export default {
 
 .ui-select__dropdown {
     background-color: white;
-    box-shadow: 1px 2px 8px $md-grey-600;
+    box-shadow: none;
     color: $primary-text-color;
     display: block;
     list-style-type: none;
     margin: 0;
     margin-bottom: rem-calc(8px);
-    min-width: rem-calc(180px);
+    min-width: rem-calc(100px);
     outline: none;
     padding: 0;
     position: absolute;
     width: 100%;
     z-index: $z-index-dropdown;
+    border-color: $ui-input-dropdown-border-color;
+    border-width: $ui-input-dropdown-border-width;
+    border-style: $ui-input-dropdown-border-style;
 }
 
 .ui-select__search-input {
@@ -840,6 +845,7 @@ export default {
     padding: 0;
     position: relative;
     font-size: $ui-input-label-font-size;
+    z-index: 10000;
 }
 
 .ui-select__no-results {

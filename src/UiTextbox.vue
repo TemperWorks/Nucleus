@@ -403,6 +403,8 @@ export default {
     }
 
     &.is-disabled {
+         opacity: $ui-input-text-opacity--disabled;
+     
         .ui-textbox__input,
         .ui-textbox__textarea {
             border-bottom-style: $ui-input-border-style--disabled;
