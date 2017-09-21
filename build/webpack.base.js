@@ -50,7 +50,7 @@ module.exports = {
     stats: {
         hash: false,
         colors: true,
-        chunks: false,
+        chunks: true,
         version: false,
         children: false,
         timings: true
