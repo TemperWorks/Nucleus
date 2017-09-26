@@ -12,33 +12,29 @@ $font-stack                     : Proxima Nova,Helvetica Neue,Helvetica,Arial,sa
 // Base font size
 $base-font-size                     : 100% !default; // typically 16px in most browsers
 
-$ui-button-font-size                : 1rem;
-$ui-input-label-font-size           : 1rem;
-$ui-input-text-font-size            : 1.15rem;
-
 // ================================================
 // Input fields
 // ================================================
 
 $ui-input-height                    : rem-calc(32px) !default;
-$ui-input-margin-bottom             : rem-calc(16px) !default;
+$ui-input-margin-bottom             : rem-calc(24px) !default;
 
 // Input label
 $ui-input-label-color               : $secondary-text-color !default;
 $ui-input-label-color--hover        : $secondary-text-color !default;
-$ui-input-label-color--active       : $brand-primary-color !default;
+$ui-input-label-color--active       : $primary-text-color !default;
 $ui-input-label-color--invalid      : $md-red !default;
-$ui-input-label-font-size           : rem-calc(15px) !default;
+$ui-input-label-font-size           : rem-calc(16px) !default;
 $ui-input-label-line-height         : normal !default;
-$ui-input-label-margin-bottom       : 6px !default;
+$ui-input-label-margin-bottom       : 5px !default;
 $ui-input-label-top--inline         : rem-calc(26px) !default;
 
 // Input text
 $ui-input-text-color                : $primary-text-color !default;
 $ui-input-text-color--disabled      : $disabled-text-color !default;
 $ui-input-text-color--invalid       : $md-red !default;
-$ui-input-text-opacity--disabled    : 0.4 !default;
-$ui-input-text-font-size            : rem-calc(16px) !default;
+$ui-input-text-opacity--disabled    : 1 !default;
+$ui-input-text-font-size            : 1.15rem !default;
 
 // Input border
 $ui-input-border-color              : $divider-color !default;
@@ -51,7 +47,7 @@ $ui-input-border-style--disabled    : solid !default;
 
 // Input icons
 $ui-input-icon-color                    : $secondary-text-color !default;
-$ui-input-icon-opacity--disabled        : 0.6 !default;
+$ui-input-icon-opacity--disabled        : 1 !default;
 $ui-input-icon-margin-right             : rem-calc(12px) !default;
 $ui-input-icon-margin-top               : rem-calc(4px) !default;
 $ui-input-icon-margin-top--with-label   : rem-calc(24px) !default;
@@ -59,16 +55,16 @@ $ui-input-icon-margin-top--with-label   : rem-calc(24px) !default;
 // Input buttons (dropdown button icon, clear input button icon)
 $ui-input-button-color                  : $divider-color !default;
 $ui-input-button-color--hover           : rgba(black, 0.25) !default;
-$ui-input-button-opacity--disabled      : 0.6 !default;
+$ui-input-button-opacity--disabled      : 1 !default;
 $ui-input-button-size                   : rem-calc(18px) !default;
-$ui-input-button-margin-top             : rem-calc(7px) !default;
+$ui-input-button-margin-top             : rem-calc(4px) !default;
 $ui-input-button-margin-top--with-label : rem-calc(27px) !default;
 
 // Input feedback, help and error text
 $ui-input-feedback-font-size            : rem-calc(14px) !default;
 $ui-input-feedback-line-height          : 1.2 !default;
 $ui-input-feedback-padding-top          : rem-calc(4px) !default;
-$ui-input-feedback-opacity--disabled    : 0.8 !default;
+$ui-input-feedback-opacity--disabled    : 1 !default;
 $ui-input-feedback-color                : $secondary-text-color !default;
 $ui-input-feedback-color--invalid       : $md-red !default;
 
@@ -90,7 +86,7 @@ $ui-button-height--large            : rem-calc(48px) !default;
 $ui-input-dropdown-border-color     : $divider-color !default;
 $ui-input-dropdown-border-width     : 1px !default;
 $ui-input-dropdown-border-style     : solid !default;
-$ui-dropdown-item-font-size         : rem-calc(15px) !default;
+$ui-dropdown-item-font-size         : rem-calc(16px) !default;
 
 // ================================================
 // UiCalendar

@@ -322,7 +322,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
 .ui-textbox {
@@ -384,7 +384,7 @@ export default {
             }
         }
     }
-
+    
     &.is-invalid:not(.is-disabled) {
         .ui-textbox__label-text,
         .ui-textbox__icon-wrapper .ui-icon,

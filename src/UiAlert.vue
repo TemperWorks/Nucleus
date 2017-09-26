@@ -83,7 +83,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
 $ui-alert-color             : rgba(black, 0.75) !default;

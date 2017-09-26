@@ -187,7 +187,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
 $ui-icon-button-size            : rem-calc(36px) !default;

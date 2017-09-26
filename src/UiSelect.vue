@@ -583,7 +583,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
 .ui-select {
@@ -690,7 +690,7 @@ export default {
 
         .ui-select__dropdown-button,
         .ui-select__display-value.is-placeholder {
-            color: $ui-input-text-color--disabled;
+            color: $ui-input-button-color;
             opacity: $ui-input-button-opacity--disabled;
         }
 
@@ -702,167 +702,171 @@ export default {
             opacity: $ui-input-feedback-opacity--disabled;
         }
     }
-}
 
-.ui-select__label {
-    display: block;
-    margin: 0;
-    outline: none;
-    padding: 0;
-    position: relative;
-    width: 100%;
-}
-
-.ui-select__icon-wrapper {
-    flex-shrink: 0;
-    margin-right: $ui-input-icon-margin-right;
-    padding-top: $ui-input-icon-margin-top;
-
-    .ui-icon {
-        color: $ui-input-icon-color;
+    &__label {
+         display: block;
+         margin: 0;
+         outline: none;
+         padding: 0;
+         position: relative;
+         width: 100%;
     }
-}
+    
+    &__icon-wrapper {
+        flex-shrink: 0;
+        margin-right: $ui-input-icon-margin-right;
+        padding-top: $ui-input-icon-margin-top;
 
-.ui-select__content {
-    flex-grow: 1;
-}
+        .ui-icon {
+            color: $ui-input-icon-color;
+        }
+    
+    }
 
-.ui-select__label-text {
-    color: $ui-input-label-color;
-    font-size: $ui-input-label-font-size;
-    line-height: $ui-input-label-line-height;
-    margin-bottom: $ui-input-label-margin-bottom;
-    transform-origin: left;
-    transition: color 0.1s ease, transform 0.2s ease;
-}
+    &__content {
+        flex-grow: 1;
+    }
+    
+    &__label-text {
+        color: $ui-input-label-color;
+        font-size: $ui-input-label-font-size;
+        line-height: $ui-input-label-line-height;
+        margin-bottom: $ui-input-label-margin-bottom;
+        transform-origin: left;
+        transition: color 0.1s ease, transform 0.2s ease;
+    }
+    
+    &__display {
+        align-items: center;
+        border: none;
+        border-bottom-color: $ui-input-border-color;
+        border-bottom-style: solid;
+        border-bottom-width: $ui-input-border-width;
+        color: $ui-input-text-color;
+        cursor: pointer;
+        display: flex;
+        font-family: $font-stack;
+        font-size: $ui-input-text-font-size;
+        font-weight: normal;
+        padding: 0;
+        transition: border 0.1s ease;
+        user-select: none;
+        width: 100%;
+    }
 
-.ui-select__display {
-    align-items: center;
-    border: none;
-    border-bottom-color: $ui-input-border-color;
-    border-bottom-style: solid;
-    border-bottom-width: $ui-input-border-width;
-    color: $ui-input-text-color;
-    cursor: pointer;
-    display: flex;
-    font-family: $font-stack;
-    font-size: $ui-input-text-font-size;
-    font-weight: normal;
-    padding: 0;
-    transition: border 0.1s ease;
-    user-select: none;
-    width: 100%;
-}
-
-.ui-select__display-value {
-    flex-grow: 1;
-
+    &__display-value {
+        flex-grow: 1;
+        padding-bottom: $ui-input-label-margin-bottom;
+    
     &.is-placeholder {
-        color: $hint-text-color;
+         color: $hint-text-color;
+     }
     }
-}
-
-.ui-select__dropdown-button {
-    color: $ui-input-button-color;
-    font-size: $ui-input-button-size;
-    margin-left: auto;
-    margin-right: rem-calc(-4px);
-}
-
-.ui-select__dropdown {
-    background-color: white;
-    box-shadow: none;
-    color: $primary-text-color;
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    margin-bottom: rem-calc(8px);
-    min-width: rem-calc(100px);
-    outline: none;
-    padding: 0;
-    position: absolute;
-    width: 100%;
-    z-index: $z-index-dropdown;
-    border-color: $ui-input-dropdown-border-color;
-    border-width: $ui-input-dropdown-border-width;
-    border-style: $ui-input-dropdown-border-style;
-}
-
-.ui-select__search-input {
-    background: none;
-    border: none;
-    border-bottom-color: $ui-input-border-color;
-    border-bottom-style: solid;
-    border-bottom-width: $ui-input-border-width;
-    border-radius: 0;
-    color: $ui-input-text-color;
-    cursor: auto;
-    font-family: $font-stack;
-    font-size: $ui-input-text-font-size - rem-calc(1px);
-    font-weight: normal;
-    height: $ui-input-height + rem-calc(4px);
-    outline: none;
-    padding: rem-calc(0 12px);
-    padding-left: rem-calc(40px);
-    transition: border 0.1s ease;
-    width: 100%;
-
-    // Hide Edge and IE input clear button
-    &::-ms-clear {
-        display: none;
+    
+    &__dropdown-button {
+        color: $ui-input-button-color;
+        font-size: $ui-input-button-size;
+        margin-left: auto;
+        margin-right: rem-calc(-3px);
+        margin-top: $ui-input-button-margin-top;
+     }
+    
+    &__dropdown {
+        background-color: white;
+        box-shadow: none;
+        color: $primary-text-color;
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        margin-bottom: rem-calc(8px);
+        min-width: rem-calc(100px);
+        outline: none;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index: $z-index-dropdown;
+        border-color: $ui-input-dropdown-border-color;
+        border-width: $ui-input-dropdown-border-width;
+        border-style: $ui-input-dropdown-border-style;
+    }
+    
+    &__search-input {
+        background: none;
+        border: none;
+        border-bottom-color: $ui-input-border-color;
+        border-bottom-style: solid;
+        border-bottom-width: $ui-input-border-width;
+        border-radius: 0;
+        color: $ui-input-text-color;
+        cursor: auto;
+        font-family: $font-stack;
+        font-size: $ui-input-text-font-size - rem-calc(1px);
+        font-weight: normal;
+        height: $ui-input-height + rem-calc(4px);
+        outline: none;
+        padding: rem-calc(0 12px);
+        padding-left: rem-calc(40px);
+        transition: border 0.1s ease;
+        width: 100%;
+    
+        // Hide Edge and IE input clear button
+        &::-ms-clear {
+            display: none;
+        }
+    
+        &:focus + .ui-select__search-icon {
+            color: $ui-input-label-color--active;
+        }
     }
 
-    &:focus + .ui-select__search-icon {
-        color: $ui-input-label-color--active;
-    }
+    &__search-icon,
+    &__search-progress {
+         position: absolute;
+         top: rem-calc(8px);
+     }
+    
+    &__search-icon {
+         color: $ui-input-icon-color;
+         font-size: rem-calc(20px);
+         left: rem-calc(12px);
+     }
+    
+    &__search-progress {
+         right: rem-calc(12px);
+     }
+    
+    &__options {
+         background-color: white;
+         color: $primary-text-color;
+         display: block;
+         list-style-type: none;
+         margin: 0;
+         max-height: rem-calc(256px);
+         min-width: 100%;
+         overflow-y: auto;
+         padding: 0;
+         position: relative;
+         font-size: $ui-input-label-font-size;
+         z-index: 10000;
+     }
+    
+    &__no-results {
+         color: $secondary-text-color;
+         font-size: rem-calc(14px);
+         padding: rem-calc(8px 12px);
+         width: 100%;
+     }
+    
+    &__feedback {
+         color: $ui-input-feedback-color;
+         font-size: $ui-input-feedback-font-size;
+         line-height: $ui-input-feedback-line-height;
+         margin: 0;
+         padding-top: $ui-input-feedback-padding-top;
+         position: relative;
+     }
 }
 
-.ui-select__search-icon,
-.ui-select__search-progress {
-    position: absolute;
-    top: rem-calc(8px);
-}
-
-.ui-select__search-icon {
-    color: $ui-input-icon-color;
-    font-size: rem-calc(20px);
-    left: rem-calc(12px);
-}
-
-.ui-select__search-progress {
-    right: rem-calc(12px);
-}
-
-.ui-select__options {
-    background-color: white;
-    color: $primary-text-color;
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    max-height: rem-calc(256px);
-    min-width: 100%;
-    overflow-y: auto;
-    padding: 0;
-    position: relative;
-    font-size: $ui-input-label-font-size;
-    z-index: 10000;
-}
-
-.ui-select__no-results {
-    color: $secondary-text-color;
-    font-size: rem-calc(14px);
-    padding: rem-calc(8px 12px);
-    width: 100%;
-}
-
-.ui-select__feedback {
-    color: $ui-input-feedback-color;
-    font-size: $ui-input-feedback-font-size;
-    line-height: $ui-input-feedback-line-height;
-    margin: 0;
-    padding-top: $ui-input-feedback-padding-top;
-    position: relative;
-}
 
 // ================================================
 // Icon Positions

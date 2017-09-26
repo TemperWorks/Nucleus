@@ -88,7 +88,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
 $ui-select-option-checkbox-color: rgba(black, 0.38) !default;

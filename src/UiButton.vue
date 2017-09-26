@@ -218,7 +218,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
 .ui-button {
@@ -227,8 +227,7 @@ export default {
     align-items: center;
     justify-content: center;
     min-width: rem-calc(80px);
-    height: $ui-button-height;
-    min-height: 42px;
+    min-height: $ui-button-height;
     padding-left: rem-calc(16px);
     padding-right: rem-calc(16px);
     background: none;
@@ -403,7 +402,7 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($md-grey-200, 7.5%);
+            background-color: darken($md-grey-200, 2%);
         }
 
         .ui-ripple-ink__ink {
@@ -435,7 +434,7 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($brand-primary-color, 6%);
+            background-color: darken($brand-primary-color, 2%);
         }
     }
 
@@ -446,7 +445,7 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($brand-accent-color, 6%);
+            background-color: darken($brand-accent-color, 2%);
         }
     }
 
@@ -457,7 +456,7 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($brand-secondary-color, 6%);
+            background-color: darken($brand-secondary-color, 2%);
         }
     }
 
@@ -468,7 +467,7 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($md-orange, 6%);
+            background-color: darken($md-orange, 2%);
         }
     }
 
@@ -479,7 +478,7 @@ export default {
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($md-red, 6%);
+            background-color: darken($md-red, 2%);
         }
     }
 }

@@ -412,7 +412,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 .page--ui-confirm {
     pre {
         margin-top: 24px;

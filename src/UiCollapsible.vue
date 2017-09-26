@@ -169,11 +169,11 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
-$ui-collapsible-header-background           : $md-grey-200 !default;
-$ui-collapsible-header-background-hover     : $md-grey-300 !default;
+$ui-collapsible-header-background           : $md-grey-100 !default;
+$ui-collapsible-header-background-hover     : $md-grey-200 !default;
 
 .ui-collapsible {
     font-family: $font-stack;
@@ -264,6 +264,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
     display: block;
     padding: rem-calc(20px);
     width: 100%;
+    background-color: #fff;
 }
 
 .ui-collapsible--transition-toggle-enter-active,
