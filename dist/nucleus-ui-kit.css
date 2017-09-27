@@ -1936,7 +1936,7 @@ body[modality="keyboard"] .ui-checkbox__input:focus + .ui-checkbox__checkmark .u
   opacity: 0;
   position: absolute;
   transform: scale(0);
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
   transition-property: opacity, transform;
   transition-timing-function: ease-out;
   width: 2.49375rem;
@@ -2666,13 +2666,16 @@ body[modality="keyboard"] .ui-fab:focus .ui-fab__focus-ring {
   height: 2.5rem;
   width: 2.5rem;
 }
+.ui-fab--size-normal .ui-icon {
+  font-size: 1.5rem;
+}
 .ui-fab--size-small,
 .ui-fab--size-small .ui-fab__focus-ring {
-  width: 1.625rem;
-  height: 1.625rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .ui-fab--size-small .ui-icon {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
 }
 .ui-fab--color-default {
   background-color: white;
@@ -3118,6 +3121,7 @@ body[modality="keyboard"] .ui-fab:focus .ui-fab__focus-ring {
 }
 .ui-preloader {
   position: relative;
+  top: -3px;
   width: 100%;
 }
 .ui-preloader.is-loading .ui-preloader__progressbar {
@@ -3130,7 +3134,7 @@ body[modality="keyboard"] .ui-fab:focus .ui-fab__focus-ring {
   left: 0;
   opacity: 0;
   position: absolute;
-  top: 0;
+  top: 0px;
   transition-duration: 0.3s;
   transition-property: opacity, padding-top;
   transition-timing-function: ease;

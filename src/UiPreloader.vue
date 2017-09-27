@@ -35,6 +35,7 @@ $ui-preloader-color-4   : #fdba2c !default; // orange
 
 .ui-preloader {
     position: relative;
+    top: -3px;
     width: 100%;
 
     &.is-loading {
@@ -51,7 +52,7 @@ $ui-preloader-color-4   : #fdba2c !default; // orange
     left: 0;
     opacity: 0;
     position: absolute;
-    top: 0;
+    top: 0px;
     transition-duration: 0.3s;
     transition-property: opacity, padding-top;
     transition-timing-function: ease;
