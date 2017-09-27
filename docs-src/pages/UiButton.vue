@@ -509,7 +509,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import '~styles/imports';
 
 .page--ui-button {

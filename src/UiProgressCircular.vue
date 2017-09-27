@@ -145,7 +145,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
 $ui-progress-indeterminate-rotation-duration    : 0.7s !default;

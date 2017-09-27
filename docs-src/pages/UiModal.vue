@@ -357,7 +357,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 .page--ui-modal {
     .page__demo-group {
         margin-bottom: 16px;

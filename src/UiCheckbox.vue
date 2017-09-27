@@ -117,7 +117,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
 $ui-checkbox-border-width           : rem-calc(1px) !default;
@@ -125,7 +125,7 @@ $ui-checkbox-checkmark-width        : rem-calc(2px) !default;
 $ui-checkbox-transition-duration    : 0.15s !default;
 $ui-checkbox-label-font-size        : rem-calc(16px) !default;
 
-$ui-checkbox-size                   : rem-calc(20px); // no !default as it shouldn't be overridden
+$ui-checkbox-size                   : rem-calc(19px); // no !default as it shouldn't be overridden
 $ui-checkbox-focus-ring-size        : $ui-checkbox-size * 2.1;
 
 .ui-checkbox {
@@ -134,7 +134,7 @@ $ui-checkbox-focus-ring-size        : $ui-checkbox-size * 2.1;
     font-family: $font-stack;
     font-weight: normal;
     margin: 0;
-    margin-bottom: rem-calc(8px);
+    margin-bottom: rem-calc(10px);
     position: relative;
 
     &:not(.is-disabled):not(.is-checked):hover,
@@ -175,7 +175,7 @@ $ui-checkbox-focus-ring-size        : $ui-checkbox-size * 2.1;
 .ui-checkbox__label-text {
     cursor: pointer;
     font-size: $ui-checkbox-label-font-size;
-    margin-left: rem-calc(8px);
+    margin-left: rem-calc(12px);
 }
 
 .ui-checkbox__checkmark {

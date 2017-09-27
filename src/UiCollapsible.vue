@@ -169,15 +169,14 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
-$ui-collapsible-header-background           : $md-grey-200 !default;
-$ui-collapsible-header-background-hover     : $md-grey-300 !default;
+$ui-collapsible-header-background           : $md-grey-100 !default;
+$ui-collapsible-header-background-hover     : $md-grey-200 !default;
 
 .ui-collapsible {
     font-family: $font-stack;
-    margin-bottom: .5rem;
     width: 100%;
 
     &:not(.is-disabled) {
@@ -216,7 +215,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
             color: rgba(0, 0, 0, 0.7);
             font-size: 1.1em;
             font-weight: bold;
-            padding: 1rem;
+            padding: rem-calc(24px);
         }
 
         #{$block}__body {
@@ -234,7 +233,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
     line-height: 1.5;
     margin: 0;
     min-height: rem-calc(48px);
-    padding: rem-calc(12px 16px);
+    padding: rem-calc(16px 20px);
     position: relative;
     touch-action: manipulation; // IE
     width: 100%;
@@ -262,11 +261,10 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 }
 
 .ui-collapsible__body {
-    border-top: 0;
-    border: 1px solid $md-grey-200;
     display: block;
-    padding: rem-calc(16px);
+    padding: rem-calc(20px);
     width: 100%;
+    background-color: #fff;
 }
 
 .ui-collapsible--transition-toggle-enter-active,

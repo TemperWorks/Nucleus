@@ -187,16 +187,16 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 @import './styles/imports';
 
 $ui-icon-button-size            : rem-calc(36px) !default;
-$ui-icon-button--size-small     : rem-calc(32px) !default;
+$ui-icon-button--size-small     : rem-calc(26px) !default;
 $ui-icon-button--size-large     : rem-calc(48px) !default;
 
 .ui-icon-button {
     align-items: center;
-    background: none;
+    background: rgba(black, 0.05);
     border-radius: 50%;
     border: none;
     cursor: pointer;

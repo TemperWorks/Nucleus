@@ -6,7 +6,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
     @import './styles/imports';
 
     .ui-breadcrumb-container {

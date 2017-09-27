@@ -71,7 +71,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" type="text/scss">
 .page--ui-preloader {
     .ui-button {
         margin-top: 24px;
