@@ -86,7 +86,7 @@ export default {
 @import './styles/imports';
 
 $ui-fab-size--normal    : rem-calc(40px) !default;
-$ui-fab-size--small     : rem-calc(26px) !default;
+$ui-fab-size--small     : rem-calc(24px) !default;
 
 .ui-fab {
     align-items: center;
@@ -145,6 +145,9 @@ $ui-fab-size--small     : rem-calc(26px) !default;
         height: $ui-fab-size--normal;
         width: $ui-fab-size--normal;
     }
+    .ui-icon {
+        font-size: rem-calc(24px);
+    }
 }
 
 .ui-fab--size-small {
@@ -154,7 +157,7 @@ $ui-fab-size--small     : rem-calc(26px) !default;
         height: $ui-fab-size--small;
     }
     .ui-icon {
-        font-size: rem-calc(15px);
+        font-size: rem-calc(14px);
     }
 }
 

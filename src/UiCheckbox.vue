@@ -122,7 +122,7 @@ export default {
 
 $ui-checkbox-border-width           : rem-calc(1px) !default;
 $ui-checkbox-checkmark-width        : rem-calc(2px) !default;
-$ui-checkbox-transition-duration    : 0.15s !default;
+$ui-checkbox-transition-duration    : 0.3s !default;
 $ui-checkbox-label-font-size        : rem-calc(16px) !default;
 
 $ui-checkbox-size                   : rem-calc(19px); // no !default as it shouldn't be overridden
