@@ -164,10 +164,10 @@ export default {
 @import './styles/imports';
 
 .ui-snackbar-container {
+    position: fixed;
     bottom: 0;
     left: rem-calc(8px);
     overflow: hidden;
-    position: absolute;
 
     .ui-snackbar {
         margin: rem-calc(4px 4px 12px 4px);
