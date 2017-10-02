@@ -845,7 +845,7 @@ export default {
          min-width: 100%;
          overflow-y: auto;
          padding: 0;
-         position: relative;
+         position: absolute;
          font-size: $ui-input-label-font-size;
          z-index: 10000;
      }
