@@ -4280,6 +4280,7 @@ body[modality="keyboard"] .ui-snackbar__action-button:focus {
   bottom: 0;
   left: 0.5rem;
   overflow: hidden;
+  z-index: 30;
 }
 .ui-snackbar-container .ui-snackbar {
     margin: 0.25rem 0.25rem 0.75rem 0.25rem;

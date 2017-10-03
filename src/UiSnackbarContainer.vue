@@ -168,6 +168,7 @@ export default {
     bottom: 0;
     left: rem-calc(8px);
     overflow: hidden;
+    z-index: 30;
 
     .ui-snackbar {
         margin: rem-calc(4px 4px 12px 4px);
