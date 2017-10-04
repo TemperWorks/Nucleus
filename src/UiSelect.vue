@@ -686,14 +686,18 @@ export default {
             border-bottom-width: $ui-input-border-width--active;
             color: $ui-input-text-color--disabled;
             cursor: default;
+    
         }
-
-        .ui-select__dropdown-button,
+    
         .ui-select__display-value.is-placeholder {
-            color: $ui-input-button-color;
-            opacity: $ui-input-button-opacity--disabled;
+            color: $ui-input-text-color--disabled;
         }
 
+        .ui-select__dropdown-button {
+            color: $ui-input-button-color;
+            opacity: $ui-input-icon-opacity--disabled;
+        }
+    
         .ui-select__icon-wrapper .ui-icon {
             opacity: $ui-input-icon-opacity--disabled;
         }
@@ -845,7 +849,7 @@ export default {
          min-width: 100%;
          overflow-y: auto;
          padding: 0;
-         position: relative;
+         position: absolute;
          font-size: $ui-input-label-font-size;
          z-index: 10000;
      }

@@ -3845,7 +3845,7 @@ body[modality="keyboard"] .ui-radio__input:focus + .ui-radio__focus-ring {
     min-width: 100%;
     overflow-y: auto;
     padding: 0;
-    position: relative;
+    position: absolute;
     font-size: 1rem;
     z-index: 10000;
 }
@@ -4276,10 +4276,11 @@ body[modality="keyboard"] .ui-snackbar__action-button:focus {
 }
 }
 .ui-snackbar-container {
+  position: fixed;
   bottom: 0;
   left: 0.5rem;
   overflow: hidden;
-  position: absolute;
+  z-index: 30;
 }
 .ui-snackbar-container .ui-snackbar {
     margin: 0.25rem 0.25rem 0.75rem 0.25rem;
