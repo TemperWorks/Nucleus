@@ -474,7 +474,7 @@ body[modality="keyboard"] .ui-close-button--color-white:focus .ui-close-button__
 .ui-autocomplete.is-disabled .ui-autocomplete__input {
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.2);
 }
 .ui-autocomplete.is-disabled .ui-autocomplete__icon-wrapper .ui-icon {
     opacity: 1;
@@ -1869,7 +1869,7 @@ body[modality="keyboard"] .ui-icon-button:focus .ui-icon-button__focus-ring {
 }
 .ui-checkbox.is-disabled .ui-checkbox__checkmark,
   .ui-checkbox.is-disabled .ui-checkbox__label-text {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.2);
     cursor: default;
 }
 .ui-checkbox.is-disabled .ui-checkbox__checkmark::before {
@@ -2468,12 +2468,12 @@ body[modality="keyboard"] .ui-checkbox__input:focus + .ui-checkbox__checkmark .u
 .ui-datepicker.is-disabled .ui-datepicker__display {
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.2);
     cursor: default;
 }
 .ui-datepicker.is-disabled .ui-datepicker__dropdown-button,
   .ui-datepicker.is-disabled .ui-datepicker__display-value.is-placeholder {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.2);
     opacity: 1;
 }
 .ui-datepicker.is-disabled .ui-datepicker__icon-wrapper .ui-icon {
@@ -3700,11 +3700,13 @@ body[modality="keyboard"] .ui-radio__input:focus + .ui-radio__focus-ring {
 .ui-select.is-disabled .ui-select__display {
       border-bottom-style: solid;
       border-bottom-width: 2px;
-      color: rgba(0, 0, 0, 0.4);
+      color: rgba(0, 0, 0, 0.2);
       cursor: default;
 }
-.ui-select.is-disabled .ui-select__dropdown-button,
-    .ui-select.is-disabled .ui-select__display-value.is-placeholder {
+.ui-select.is-disabled .ui-select__display-value.is-placeholder {
+      color: rgba(0, 0, 0, 0.2);
+}
+.ui-select.is-disabled .ui-select__dropdown-button {
       color: rgba(0, 0, 0, 0.1);
       opacity: 1;
 }
@@ -4355,7 +4357,7 @@ body[modality="keyboard"] .ui-snackbar__action-button:focus {
 }
 .ui-switch.is-disabled .ui-switch__input-wrapper,
   .ui-switch.is-disabled .ui-switch__label-text {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.2);
     cursor: default;
 }
 .ui-switch__input-wrapper {
@@ -4806,7 +4808,7 @@ body[modality="keyboard"] .ui-tabs--background-color-primary .ui-tab-header-item
     .ui-textbox.is-disabled .ui-textbox__textarea {
       border-bottom-style: solid;
       border-bottom-width: 2px;
-      color: rgba(0, 0, 0, 0.4);
+      color: rgba(0, 0, 0, 0.2);
 }
 .ui-textbox.is-disabled .ui-textbox__icon-wrapper .ui-icon {
       opacity: 1;
