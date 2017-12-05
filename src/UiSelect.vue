@@ -1,5 +1,9 @@
 <template>
     <div class="ui-select" :class="classes">
+        <svg @click="reset()" v-show="showClearIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M18.984 6.422L13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z"/>
+        </svg>
+
         <input
             class="ui-select__hidden-input"
             type="hidden"
@@ -45,7 +49,7 @@
                         {{ hasDisplayText ? displayText : (hasFloatingLabel && isLabelInline) ? null : placeholder }}
                     </div>
 
-                    <ui-icon class="ui-select__dropdown-button">
+                    <ui-icon v-show="showDropdownIcon" class="ui-select__dropdown-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M.9 2.85L7.94 9.9l7.07-7.05c.5-.5.5-1.3 0-1.8-.5-.48-1.3-.48-1.8 0l-5.27 5.3-5.27-5.3c-.5-.48-1.3-.48-1.8 0-.48.5-.48 1.3 0 1.8"/></svg>
                     </ui-icon>
                 </div>
@@ -287,6 +291,14 @@ export default {
 
         showHelp() {
             return !this.showError && Boolean(this.help);
+        },
+
+        showClearIcon() {
+            return !this.disabled && this.value.length;
+        },
+
+        showDropdownIcon() {
+            return !this.showClearIcon;
         },
 
         filteredOptions() {
