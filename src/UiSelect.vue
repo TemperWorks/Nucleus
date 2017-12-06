@@ -49,7 +49,7 @@
 
     
                     <ui-icon v-show="showClearIcon" class="ui-select__dropdown-button">
-                        <svg @click="reset()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="14" height="14">
+                        <svg @click="reset()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27" width="14" height="14">
                             <path d="M18,19c-0.3,0-0.5-0.1-0.7-0.3l-18-18c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l18,18c0.4,0.4,0.4,1,0,1.4C18.5,18.9,18.3,19,18,19
 	z"/>
                             <path d="M0,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l18-18c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-18,18C0.5,18.9,0.3,19,0,19z"/>
