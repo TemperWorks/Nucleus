@@ -1,8 +1,5 @@
 <template>
     <div class="ui-select" :class="classes">
-        <svg @click="reset()" v-show="showClearIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M18.984 6.422L13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z"/>
-        </svg>
 
         <input
             class="ui-select__hidden-input"
@@ -49,9 +46,16 @@
                         {{ hasDisplayText ? displayText : (hasFloatingLabel && isLabelInline) ? null : placeholder }}
                     </div>
 
-                    <ui-icon v-show="showDropdownIcon" class="ui-select__dropdown-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M.9 2.85L7.94 9.9l7.07-7.05c.5-.5.5-1.3 0-1.8-.5-.48-1.3-.48-1.8 0l-5.27 5.3-5.27-5.3c-.5-.48-1.3-.48-1.8 0-.48.5-.48 1.3 0 1.8"/></svg>
+
+    
+                    <ui-icon v-show="showClearIcon" class="ui-select__dropdown-button">
+                        <svg @click="reset()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="14" height="14">
+                            <path d="M18,19c-0.3,0-0.5-0.1-0.7-0.3l-18-18c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l18,18c0.4,0.4,0.4,1,0,1.4C18.5,18.9,18.3,19,18,19
+	z"/>
+                            <path d="M0,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l18-18c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-18,18C0.5,18.9,0.3,19,0,19z"/>
+                        </svg>
                     </ui-icon>
+                    
                 </div>
 
                 <transition name="ui-select--transition-fade">
@@ -145,6 +149,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </template>
 
