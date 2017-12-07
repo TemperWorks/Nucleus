@@ -56,9 +56,10 @@
                         </svg>
                     </ui-icon>
     
-                    <ui-icon v-show="showClearIcon" class="ui-select__dropdown-button">
-                        <svg @click="clear()" v-show="showClearIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27" width="14" height="14">
-                            <path d="M18.984 6.422L13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z"/>
+                    <ui-icon v-show="showClearIcon" class="ui-select__clear-button">
+                        <svg @click="clear()" v-show="showClearIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16" height="16">
+                            <path d="M9.7,8L15,2.8c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L8,6.3L2.8,1C2.3,0.6,1.5,0.6,1,1C0.6,1.5,0.6,2.3,1,2.8L6.3,8
+	L1,13.2c-0.5,0.5-0.5,1.2,0,1.7c0.5,0.5,1.2,0.5,1.7,0L8,9.7l5.2,5.2c0.5,0.5,1.2,0.5,1.7,0c0.5-0.5,0.5-1.2,0-1.7L9.7,8z"/>
                         </svg>
                     </ui-icon>
                     
@@ -643,7 +644,7 @@ export default {
             border-bottom-color: $ui-input-border-color--hover;
         }
 
-        .ui-select__dropdown-button {
+        .ui-select__dropdown-button, .ui-select__clear-button {
             color: $ui-input-button-color--hover;
         }
     }
@@ -683,7 +684,7 @@ export default {
             padding-top: $ui-input-icon-margin-top--with-label;
         }
 
-        .ui-select__dropdown-button {
+        .ui-select__dropdown-button, .ui-select__clear-button {
             top: $ui-input-button-margin-top--with-label;
         }
     }
@@ -733,7 +734,7 @@ export default {
             color: $ui-input-text-color--disabled;
         }
 
-        .ui-select__dropdown-button {
+        .ui-select__dropdown-button, .ui-select__clear-button {
             color: $ui-input-button-color;
             opacity: $ui-input-icon-opacity--disabled;
         }
@@ -807,13 +808,18 @@ export default {
      }
     }
     
-    &__dropdown-button {
+    &__dropdown-button, &__clear-button {
         color: $ui-input-button-color;
         font-size: $ui-input-button-size;
         margin-left: auto;
         margin-right: rem-calc(-3px);
         margin-top: $ui-input-button-margin-top;
      }
+    
+    &__clear-button {
+        margin-top: 0;
+        margin-right: rem-calc(-4px);
+    }
     
     &__dropdown {
         background-color: white;
