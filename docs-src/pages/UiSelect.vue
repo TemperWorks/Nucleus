@@ -30,6 +30,16 @@
                 v-model="select2"
             ></ui-select>
 
+            <h4 class="page__demo-title">Clearable single select</h4>
+
+            <ui-select
+                    label="You can clear Select using a clear icon."
+                    placeholder="Select a colour"
+                    :options="colourStrings"
+                    v-model="select15"
+                    clearable
+            ></ui-select>
+
             <h4 class="page__demo-title">With icon</h4>
 
             <ui-select
@@ -450,6 +460,15 @@
                                     <p>Whether or not the select is disabled. Set to <code>true</code> to disable the select.</p>
                                 </td>
                             </tr>
+
+                            <tr>
+                                <td>clearable</td>
+                                <td>Boolean</td>
+                                <td><code>false</code></td>
+                                <td>
+                                    <p>Whether single select can be cleared. Set <code>clearable</code> attribute for <code>ui-select</code> and a clear icon will appear.</p>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -691,6 +710,7 @@ export default {
             select12o5: '',
             select13: '',
             select14: 'Peach',
+            select15: '',
             colours,
             colourStrings,
             countries
