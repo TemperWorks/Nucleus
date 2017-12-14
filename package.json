@@ -1,6 +1,6 @@
 {
     "name": "nucleus-ui-kit",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A delightful collection of UI components we use at Temper written with Vue, inspired by Material Design.",
     "main": "dist/nucleus-ui-kit.js",
     "scripts": {
