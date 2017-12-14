@@ -9182,6 +9182,169 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 var _UiIcon = __webpack_require__(1);
 
 var _UiIcon2 = _interopRequireDefault(_UiIcon);
@@ -9282,7 +9445,8 @@ exports.default = {
         disabled: {
             type: Boolean,
             default: false
-        }
+        },
+        clearable: Boolean
     },
 
     data: function data() {
@@ -9327,9 +9491,25 @@ exports.default = {
             return !this.showError && Boolean(this.help);
         },
         showClearIcon: function showClearIcon() {
-            return !this.disabled && this.value.length;
+            if (!this.clearable) {
+                return false;
+            }
+
+            var valueNotEmpty = false;
+
+            if (_typeof(this.value) === 'object') {
+                valueNotEmpty = Object.keys(this.value).length;
+            } else if (typeof this.value === 'string') {
+                valueNotEmpty = this.value.length;
+            }
+
+            return !this.disabled && valueNotEmpty;
         },
         showDropdownIcon: function showDropdownIcon() {
+            if (!this.clearable) {
+                return true;
+            }
+
             return !this.showClearIcon;
         },
         filteredOptions: function filteredOptions() {
@@ -9597,7 +9777,13 @@ exports.default = {
             });
         },
         reset: function reset() {
-            this.setValue(JSON.parse(this.initialValue));
+            this.resetTo(JSON.parse(this.initialValue));
+        },
+        clear: function clear() {
+            this.resetTo("");
+        },
+        resetTo: function resetTo(value) {
+            this.setValue(value);
             this.clearQuery();
             this.resetTouched();
 
@@ -9616,161 +9802,7 @@ exports.default = {
         UiProgressCircular: _UiProgressCircular2.default,
         UiSelectOption: _UiSelectOption2.default
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 /* 76 */
@@ -13631,6 +13663,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "ui-select__label",
     attrs: {
       "tabindex": _vm.disabled ? null : '0'
+    }
+  }, [(_vm.label || _vm.$slots.default) ? _c('div', {
+    staticClass: "ui-select__label-text",
+    class: _vm.labelClasses
+  }, [_vm._t("default", [_vm._v(_vm._s(_vm.label))])], 2) : _vm._e(), _vm._v(" "), _c('div', {
+    staticClass: "ui-select__display"
+  }, [_c('div', {
+    staticClass: "ui-select__display-value",
+    class: {
+      'is-placeholder': !_vm.hasDisplayText
     },
     on: {
       "click": _vm.toggleDropdown,
@@ -13648,43 +13690,58 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onBlur($event)
       }]
     }
-  }, [(_vm.label || _vm.$slots.default) ? _c('div', {
-    staticClass: "ui-select__label-text",
-    class: _vm.labelClasses
-  }, [_vm._t("default", [_vm._v(_vm._s(_vm.label))])], 2) : _vm._e(), _vm._v(" "), _c('div', {
-    staticClass: "ui-select__display"
-  }, [_c('div', {
-    staticClass: "ui-select__display-value",
-    class: {
-      'is-placeholder': !_vm.hasDisplayText
-    }
   }, [_vm._v("\n                        " + _vm._s(_vm.hasDisplayText ? _vm.displayText : (_vm.hasFloatingLabel && _vm.isLabelInline) ? null : _vm.placeholder) + "\n                    ")]), _vm._v(" "), _c('ui-icon', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showDropdownIcon),
+      expression: "showDropdownIcon"
+    }],
+    staticClass: "ui-select__dropdown-button",
+    nativeOn: {
+      "click": function($event) {
+        _vm.toggleDropdown($event)
+      }
+    }
+  }, [_c('svg', {
+    attrs: {
+      "xmlns": "http://www.w3.org/2000/svg",
+      "width": "16",
+      "height": "10"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M.9 2.85L7.94 9.9l7.07-7.05c.5-.5.5-1.3 0-1.8-.5-.48-1.3-.48-1.8 0l-5.27 5.3-5.27-5.3c-.5-.48-1.3-.48-1.8 0-.48.5-.48 1.3 0 1.8"
+    }
+  })])]), _vm._v(" "), _c('ui-icon', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.showClearIcon),
       expression: "showClearIcon"
     }],
-    staticClass: "ui-select__dropdown-button"
+    staticClass: "ui-select__clear-button"
   }, [_c('svg', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showClearIcon),
+      expression: "showClearIcon"
+    }],
     attrs: {
       "xmlns": "http://www.w3.org/2000/svg",
-      "viewBox": "0 0 27 27",
-      "width": "14",
-      "height": "14"
+      "viewBox": "0 0 20 20",
+      "width": "16",
+      "height": "16"
     },
     on: {
       "click": function($event) {
-        _vm.reset()
+        _vm.clear()
       }
     }
   }, [_c('path', {
     attrs: {
-      "d": "M18,19c-0.3,0-0.5-0.1-0.7-0.3l-18-18c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l18,18c0.4,0.4,0.4,1,0,1.4C18.5,18.9,18.3,19,18,19\n\tz"
-    }
-  }), _vm._v(" "), _c('path', {
-    attrs: {
-      "d": "M0,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l18-18c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-18,18C0.5,18.9,0.3,19,0,19z"
+      "d": "M9.7,8L15,2.8c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L8,6.3L2.8,1C2.3,0.6,1.5,0.6,1,1C0.6,1.5,0.6,2.3,1,2.8L6.3,8\n\tL1,13.2c-0.5,0.5-0.5,1.2,0,1.7c0.5,0.5,1.2,0.5,1.7,0L8,9.7l5.2,5.2c0.5,0.5,1.2,0.5,1.7,0c0.5-0.5,0.5-1.2,0-1.7L9.7,8z"
     }
   })])])], 1), _vm._v(" "), _c('transition', {
     attrs: {
