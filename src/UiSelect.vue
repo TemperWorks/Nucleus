@@ -311,7 +311,15 @@ export default {
                 return false;
             }
 
-            return !this.disabled && this.value.length;
+            let valueNotEmpty = false;
+
+            if (typeof this.value === 'object') {
+                valueNotEmpty = Object.keys(this.value).length;
+            } else if (typeof this.value === 'string') {
+                valueNotEmpty = this.value.length;
+            }
+
+            return !this.disabled && valueNotEmpty;
         },
 
         showDropdownIcon() {

@@ -35,7 +35,10 @@
             <ui-select
                     label="You can clear Select using a clear icon."
                     placeholder="Select a colour"
-                    :options="colourStrings"
+
+                    :keys="{ label: 'label', value: 'value' }"
+                    :options="colours"
+
                     v-model="select15"
                     clearable
             ></ui-select>
