@@ -278,7 +278,7 @@ export default {
                 query = query.toLowerCase();
             }
 
-            return fuzzysearch(query, text.toLowerCase());
+            return fuzzysearch(query, text.toString().toLowerCase());
         },
 
         selectSuggestion(suggestion) {
