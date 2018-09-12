@@ -129,7 +129,7 @@ export default {
         autocomplete: String,
         autofocus: {
             type: Boolean,
-            default: false
+            default: true
         },
         autosize: {
             type: Boolean,
